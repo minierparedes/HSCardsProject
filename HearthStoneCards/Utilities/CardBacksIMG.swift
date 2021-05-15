@@ -16,7 +16,7 @@ enum CardBacksIMG: String, View {
     case eyesofCThunWispersOfTheOldGods
     case theGandTournament
     case blackrockMountainMoltenCore
-    case hamuulForgedInTheBarrens 
+    case hamuulForgedInTheBarrens
     
     var body: Image {
         Image(rawValue)

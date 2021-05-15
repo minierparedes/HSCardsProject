@@ -11,13 +11,13 @@ struct CardCellView: View {
     let cardModel: HSCardModel
     var body: some View {
         VStack {
-            CardImageCellView(url: cardModel.cardImageURL, cardBack: CardBacksIMG(rawValue: cardModel.cardBackIMG?.rawValue ?? "classic")!)
-                .frame(width: 100, height: 100, alignment: .center)//, cardBack: HSCardModel.CardBackIMG(rawValue: cardModel.cardBackIMG?.rawValue ?? "classic")!
+            CardImageCellView(url: cardModel.cardImageURL, cardBack: HSCardModel.CardBackIMG(rawValue: cardModel.set ?? "classic")!)
+                .frame(width: 100, height: 100, alignment: .center)
         }
     }
 }
-
-
+//, cardBack: HSCardModel.CardBackIMG(rawValue: cardModel.cardBackIMG?.rawValue ?? "classic")!
+//(CardBacksIMG(rawValue: cardModel.set!) ?? CardBacksIMG(rawValue: "classic"))!
 
 /*
  HSCardModel(id: "1",

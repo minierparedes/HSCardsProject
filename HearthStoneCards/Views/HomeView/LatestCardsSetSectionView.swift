@@ -13,6 +13,7 @@ struct LatestCardsSetSectionView: View {
         List {
             ForEach(hsCardsVM.latestCardSets) {card in
                 CardCellView(cardModel: card)
+                Text(card.set!)
             }
         }
     }
