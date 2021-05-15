@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
 		8DA6B92E264D0A680082DB06 /* CardImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */; };
 		8DA6B939264E083E0082DB06 /* CardBacksIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelCacheManager.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
 		8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageCellView.swift; sourceTree = "<group>"; };
 		8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBacksIMG.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				8DB60F3126456FBA008029C3 /* HSCardsModelDataService.swift */,
 				8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */,
 				8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */,
+				8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				8DB60F39264663F8008029C3 /* HeroSectionView.swift in Sources */,
 				8DB60F0826451206008029C3 /* HearthStoneCardsApp.swift in Sources */,
 				8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */,
+				8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */,
 				8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */,
 				8DB60F512648D23B008029C3 /* HSHeroesViewModel.swift in Sources */,
 			);
