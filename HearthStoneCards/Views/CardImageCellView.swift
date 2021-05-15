@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CardImageCellView: View {
     @StateObject var cardImgVM: CardImageViewModel
-    let cardBack: CardBacksIMG
-    init(url: String, cardBack: CardBacksIMG) {
+    let cardBack: HSCardModel.CardBackIMG
+    init(url: String, cardBack: HSCardModel.CardBackIMG) {
         _cardImgVM = StateObject(wrappedValue: CardImageViewModel(imgURL: url))
         self.cardBack = cardBack
     }

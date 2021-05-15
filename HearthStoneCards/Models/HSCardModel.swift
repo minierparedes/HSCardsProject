@@ -87,6 +87,6 @@ struct HSCardModel: Identifiable, Codable {
         case eyesofCThunWispersOfTheOldGods
         case theGandTournament
         case blackrockMountainMoltenCore
-        case THE_BARRENS = "hamuulForgedInTheBarrens"
+        case THE_BARRENS
     }
 }
