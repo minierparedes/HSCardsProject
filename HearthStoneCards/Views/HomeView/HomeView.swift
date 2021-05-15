@@ -14,15 +14,29 @@ struct HomeView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     HeroSectionView()
+                        .padding(.bottom, 20)
+                        
                     
-                    Text("Hello world")
+                    Text("Discover")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(.leading)
                         .foregroundColor(.primary)
+                        .padding(.bottom, 5)
                     
-                    Spacer()
+                    LatestCardsSetSectionView()
+                        
+                    
+                    Text("HearthStone Heroes")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.leading)
+                        .foregroundColor(.primary)
+                        .padding(.bottom, 20)
+                    
+                    HeroClassSectionView()
                 }
+                .padding(.bottom, 50)
             }
             .navigationTitle("HearthStone")
             

@@ -9,23 +9,28 @@ import SwiftUI
 
 struct HSCardModel: Identifiable, Codable {
     let id: String
-    let name: String
-    let rarity: String
-    let set: String
-    let type: String
-    let cardClass: String
-    let artist: String
-    let attack: Int
-    let collectible: Bool
-    let cost: Int
-    let dbfId: Int
-    let faction: String
-    let flavor: String
-    let health: Int
-    let mechanics: [String]
-    let race: String
-    let referencedTags: [String]
-    let text: String
+    let name: String?
+    let rarity: String?
+    let set: String?
+    let type: String?
+    let cardClass: String?
+    let artist: String?
+    let attack: Int?
+    let collectible: Bool?
+    let cost: Int?
+    let dbfId: Int?
+    let faction: String?
+    let flavor: String?
+    let health: Int?
+    let mechanics: [String]?
+    let race: String?
+    let referencedTags: [String]?
+    let text: String?
+    var cardBackIMG: CardBackIMG?
+    var cardImageURL: String {
+        let urlString = "https://art.hearthstonejson.com/v1/render/latest/enUS/512x/\(id).png"
+        return urlString
+    }
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -46,9 +51,10 @@ struct HSCardModel: Identifiable, Codable {
         case race
         case referencedTags
         case text
+        case cardBackIMG
     }
     
-    init(from decoder: Decoder) throws {
+    init(cardImageURL: String, cardBackIMG: CardBackIMG, from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decodeIfPresent(String.self, forKey: .id) ?? ""
         name = try values.decodeIfPresent(String.self, forKey: .name) ?? ""
@@ -68,5 +74,19 @@ struct HSCardModel: Identifiable, Codable {
         race = try values.decodeIfPresent(String.self, forKey: .race) ?? ""
         referencedTags = try values.decodeIfPresent([String].self, forKey: .referencedTags) ?? [""]
         text = try values.decodeIfPresent(String.self, forKey: .text) ?? ""
+        self.cardBackIMG = HSCardModel.CardBackIMG(rawValue: try values.decodeIfPresent(String.self, forKey: .cardBackIMG) ?? "")!
+        }
+  
+    
+    enum CardBackIMG: String, Codable {
+        case classic
+        case pandaria
+        case blackTemple
+        case karazhanNightsOneNightInKarazhan
+        case fossilJourneyToUnGoro
+        case eyesofCThunWispersOfTheOldGods
+        case theGandTournament
+        case blackrockMountainMoltenCore
+        case THE_BARRENS = "hamuulForgedInTheBarrens"
     }
 }

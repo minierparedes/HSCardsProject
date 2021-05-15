@@ -8,16 +8,35 @@
 import SwiftUI
 
 struct CardCellView: View {
-    //let card: HSCardModel
+    let cardModel: HSCardModel
     var body: some View {
-        CardFlipView(front: {Image("card1")}, back: {Image("card6")})
+        VStack {
+            CardImageCellView(url: cardModel.cardImageURL)
+                .frame(width: 100, height: 100, alignment: .center)//, cardBack: HSCardModel.CardBackIMG(rawValue: cardModel.cardBackIMG?.rawValue ?? "classic")!
+        }
     }
 }
 
 
 
-struct CardCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardCellView()
-    }
-}
+/*
+ HSCardModel(id: "1",
+                                     name: "hello",
+                                     rarity: "rare",
+                                     set: "set",
+                                     type: "type",
+                                     cardClass: "cardClass",
+                                     artist: "artist",
+                                     attack: 1,
+                                     collectible: true,
+                                     cost: 1,
+                                     dbfId: 1,
+                                     faction: "faction",
+                                     flavor: "flavor",
+                                     health: 1,
+                                     mechanics: ["mechanics"],
+                                     race: "race",
+                                     referencedTags: ["referencedTags"],
+                                     text: "text",
+                                     url: "url")
+ */

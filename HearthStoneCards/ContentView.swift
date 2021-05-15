@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
             HomeView()
             .tabItem {
-                Text("Search")
+                Text("Home")
                 Image("tabIconHS_Classic26x26")
                     
                 }

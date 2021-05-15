@@ -9,25 +9,30 @@ import SwiftUI
 
 struct HeroSectionView: View {
     var body: some View {
-        TabView {
-            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                VStack {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("Hello world")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                            Text("Hello world and stuff")
-                                .foregroundColor(.secondary)
-                        }
-                        Spacer()
+        TabView{
+            ForEach(0..<5) {item in
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("Standard Bundle Available Now")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                        Text("Hello World")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(.secondary)
+                        Image("news\(item)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 390, height: 250)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
                     }
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                    .frame(width: 380)
                 }
-            }.padding()
-            
+            }
         }
-        .frame(width: UIScreen.main.bounds.width, height: 270)
+        .padding()
+        .frame(width: UIScreen.main.bounds.width, height: 350)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
