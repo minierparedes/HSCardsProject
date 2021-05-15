@@ -11,7 +11,7 @@ struct CardCellView: View {
     let cardModel: HSCardModel
     var body: some View {
         VStack {
-            CardImageCellView(url: cardModel.cardImageURL)
+            CardImageCellView(url: cardModel.cardImageURL, cardBack: CardBacksIMG(rawValue: cardModel.cardBackIMG?.rawValue ?? "classic")!)
                 .frame(width: 100, height: 100, alignment: .center)//, cardBack: HSCardModel.CardBackIMG(rawValue: cardModel.cardBackIMG?.rawValue ?? "classic")!
         }
     }

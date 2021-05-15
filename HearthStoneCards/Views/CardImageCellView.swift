@@ -9,17 +9,17 @@ import SwiftUI
 
 struct CardImageCellView: View {
     @StateObject var cardImgVM: CardImageViewModel
-    let cardBack: HSCardModel
-    init(url: String, cardBack: HSCardModel) {
+    let cardBack: CardBacksIMG
+    init(url: String, cardBack: CardBacksIMG) {
         _cardImgVM = StateObject(wrappedValue: CardImageViewModel(imgURL: url))
-        
+        self.cardBack = cardBack
     }
     var body: some View {
         ZStack {
             if cardImgVM.isLoading {
                 ProgressView()
             } else if let img = cardImgVM.image {
-                CardFlipView(front: {Image(uiImage: img).resizable().frame(width: 250, height: 270)}, back: {cardImgVM.getCardBackImg(HSCardModel.CardBackIMG(rawValue: cardBack.cardBackIMG!.rawValue)!)})
+                CardFlipView(front: {Image(uiImage: img).resizable().frame(width: 250, height: 270)}, back: {cardImgVM.getCardBackImg(HSCardModel.CardBackIMG(rawValue: cardBack.rawValue)!)})
                 
                
             }
@@ -29,7 +29,7 @@ struct CardImageCellView: View {
 
 struct CardImageCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CardImageCellView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", cardBack: HSCardModel.CardBackIMG.THE_BARRENS!.rawValue)
+        CardImageCellView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", cardBack: .blackTemple)
             .frame(width: 250, height: 260)
             .previewLayout(.sizeThatFits)
     }
