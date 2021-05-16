@@ -29,6 +29,7 @@
 		8DB60F4B2646C3D7008029C3 /* HeroClassSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F4A2646C3D7008029C3 /* HeroClassSectionView.swift */; };
 		8DB60F4E2648BE6E008029C3 /* HSHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F4D2648BE6E008029C3 /* HSHeroModel.swift */; };
 		8DB60F512648D23B008029C3 /* HSHeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F502648D23B008029C3 /* HSHeroesViewModel.swift */; };
+		8DB7C6412650F6E5005E5CB0 /* HSCardModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C6402650F6E5005E5CB0 /* HSCardModelManager.swift */; };
 		8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */; };
 		8DE757EC264CC7B2002DB0AC /* ParallaxScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		8DB60F4A2646C3D7008029C3 /* HeroClassSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroClassSectionView.swift; sourceTree = "<group>"; };
 		8DB60F4D2648BE6E008029C3 /* HSHeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSHeroModel.swift; sourceTree = "<group>"; };
 		8DB60F502648D23B008029C3 /* HSHeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSHeroesViewModel.swift; sourceTree = "<group>"; };
+		8DB7C6402650F6E5005E5CB0 /* HSCardModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelManager.swift; sourceTree = "<group>"; };
 		8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
 		8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 				8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */,
 				8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */,
 				8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */,
+				8DB7C6402650F6E5005E5CB0 /* HSCardModelManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				8DB60F4B2646C3D7008029C3 /* HeroClassSectionView.swift in Sources */,
 				8DB60F2C26452A65008029C3 /* HSCardModel.swift in Sources */,
 				8DB60F0A26451206008029C3 /* ContentView.swift in Sources */,
+				8DB7C6412650F6E5005E5CB0 /* HSCardModelManager.swift in Sources */,
 				8DB60F4226467608008029C3 /* CardFlipView.swift in Sources */,
 				8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */,
 				8DB60F2126451433008029C3 /* CardsView.swift in Sources */,
