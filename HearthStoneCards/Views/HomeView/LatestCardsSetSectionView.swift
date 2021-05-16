@@ -10,17 +10,16 @@ import SwiftUI
 struct LatestCardsSetSectionView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
-        ScrollView(.horizontal) {
+        HStack {
             HStack {
-                HStack {
-                    ForEach(hsCardsVM.latestCardSets) {card in
-                        CardCellView(cardModel: card)
-                    }
+                ForEach(hsCardsVM.latestCardSets) {card in
+                    CardCellView(cardModel: card)
+//                        .frame(width: 260, height: 100)
                 }
-                .modifier(ScrollingHStackModifier(items: hsCardsVM.latestCardSets.count, itemWidth: 200, itemSpacing: 15))
             }
-            .frame(width: 500, height: 300, alignment: .center)
+            .modifier(ScrollingHStackModifier(items: hsCardsVM.latestCardSets.count, itemWidth: 200, itemSpacing: 15))
         }
+        .frame(width: 380, height: 250, alignment: .center)
     }
 }
 

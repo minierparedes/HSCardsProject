@@ -19,7 +19,7 @@ struct CardImageCellView: View {
             if cardImgVM.isLoading {
                 ProgressView()
             } else if let img = cardImgVM.image {
-                CardFlipView(front: {Image(uiImage: img).resizable().frame(width: 250, height: 270)}, back: {cardImgVM.getCardBackImg(HSCardModel.CardBackIMG(rawValue: cardBack.rawValue)!)})
+                CardFlipView(front: {Image(uiImage: img).resizable().aspectRatio(contentMode: .fit)}, back: {cardImgVM.getCardBackImg(HSCardModel.CardBackIMG(rawValue: cardBack.rawValue)!)})
                 
                
             }
