@@ -18,11 +18,11 @@ class HSCardModelCacheManager {
         return cache
     }()
     
-    func addCache(key: String, value: UIImage) {
+    func addToCache(key: String, value: UIImage) {
         hscardsCache.setObject(value, forKey: key as NSString)
     }
     
-    func getCache(key: String) -> UIImage? {
+    func getFromCache(key: String) -> UIImage? {
         return hscardsCache.object(forKey: key as NSString)
     }
     
