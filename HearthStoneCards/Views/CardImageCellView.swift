@@ -10,8 +10,8 @@ import SwiftUI
 struct CardImageCellView: View {
     @StateObject var cardImgVM: CardImageViewModel
     let cardBack: HSCardModel.CardBackIMG
-    init(url: String, cardBack: HSCardModel.CardBackIMG) {
-        _cardImgVM = StateObject(wrappedValue: CardImageViewModel(imgURL: url))
+    init(url: String, cardBack: HSCardModel.CardBackIMG, key: String) {
+        _cardImgVM = StateObject(wrappedValue: CardImageViewModel(imgURL: url, key: key))
         self.cardBack = cardBack
     }
     var body: some View {
@@ -29,7 +29,7 @@ struct CardImageCellView: View {
 
 struct CardImageCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CardImageCellView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", cardBack: .blackTemple)
+        CardImageCellView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", cardBack: .blackTemple, key: "1")
             .frame(width: 250, height: 260)
             .previewLayout(.sizeThatFits)
     }
