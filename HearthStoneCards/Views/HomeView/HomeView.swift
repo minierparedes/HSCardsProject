@@ -25,6 +25,7 @@ struct HomeView: View {
                         .padding(.bottom, 5)
                     
                     LatestCardsSetSectionView()
+                        .padding()
                         
                     
                     Text("HearthStone Heroes")

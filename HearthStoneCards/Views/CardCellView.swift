@@ -13,6 +13,7 @@ struct CardCellView: View {
         VStack {
             CardImageCellView(url: cardModel.cardImageURL, cardBack: (HSCardModel.CardBackIMG(rawValue: cardModel.set!) ?? HSCardModel.CardBackIMG(rawValue: "classic"))!, key: cardModel.id)
                 
+                
         }
     }
 }

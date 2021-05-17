@@ -11,14 +11,16 @@ struct CardsView: View {
     @StateObject var hscardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
         NavigationView {
-            List {
-                ForEach(hscardsVM.hsCardsData) {card in
-                    VStack {
+            ScrollView(.horizontal) {
+                HStack(spacing: 60) {
+                    ForEach(hscardsVM.latestCardSets) {card in
                         CardCellView(cardModel: card)
+                            .frame(width: 150, height: 250)
                     }
                 }
             }
-                .navigationTitle("Cards")
+            
+            .navigationTitle("Cards")
         }
     }
 }

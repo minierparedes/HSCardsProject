@@ -11,10 +11,10 @@ struct LatestCardsSetSectionView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack {
-                ForEach(hsCardsVM.latestCardSets) { card in
+            HStack(spacing: 60) {
+                ForEach(hsCardsVM.latestCardSets) {card in
                     CardCellView(cardModel: card)
-                        .frame(width: 200)
+                        .frame(width: 150, height: 250)
                 }
             }
         }
