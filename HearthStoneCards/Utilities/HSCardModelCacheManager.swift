@@ -5,11 +5,12 @@
 //  Created by ethancr0wn on 2021/05/15.
 //
 
+import Foundation
 import SwiftUI
 
 class HSCardModelCacheManager {
     static let instance = HSCardModelCacheManager()
-    private init(){}
+    private init(){ }
     
     var hscardsCache: NSCache<NSString, UIImage> = {
         var cache = NSCache<NSString, UIImage>()
@@ -18,11 +19,11 @@ class HSCardModelCacheManager {
         return cache
     }()
     
-    func addToCache(key: String, value: UIImage) {
+    func add(key: String, value: UIImage) {
         hscardsCache.setObject(value, forKey: key as NSString)
     }
     
-    func getFromCache(key: String) -> UIImage? {
+    func get(key: String) -> UIImage? {
         return hscardsCache.object(forKey: key as NSString)
     }
     

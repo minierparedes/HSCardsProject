@@ -48,7 +48,7 @@ class HSCardsViewModel: ObservableObject {
                 self?.cardClasses = self!.hsCardsData.filter({ self!.cardClassNames.contains($0.cardClass ?? "") })
                 self?.wildFormatCards = self!.hsCardsData.filter({ self!.wildCardSetNamesYear2021.contains($0.set ?? "") })
                 self?.latestCardSets = self!.hsCardsData.filter({ $0.set == "THE_BARRENS" && $0.cardClass == "NEUTRAL" && $0.rarity == "RARE"})
-                print(self!.latestCardSets.count)
+                print("HSCardsData has the following count: \(self!.hsCardsData.count)")//count: 12659
             }
             .store(in: &cancellables)
     }

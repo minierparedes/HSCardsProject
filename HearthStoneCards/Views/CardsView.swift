@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct CardsView: View {
+    @StateObject var hscardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
         NavigationView {
-            Text("All Cards")
+            List {
+                ForEach(hscardsVM.hsCardsData) {card in
+                    VStack {
+                        CardCellView(cardModel: card)
+                    }
+                }
+            }
                 .navigationTitle("Cards")
         }
     }

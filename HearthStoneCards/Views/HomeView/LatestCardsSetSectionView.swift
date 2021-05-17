@@ -10,16 +10,14 @@ import SwiftUI
 struct LatestCardsSetSectionView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
-        HStack {
-            HStack {
-                ForEach(hsCardsVM.latestCardSets) {card in
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHStack {
+                ForEach(hsCardsVM.latestCardSets) { card in
                     CardCellView(cardModel: card)
-//                        .frame(width: 260, height: 100)
+                        .frame(width: 200)
                 }
             }
-            .modifier(ScrollingHStackModifier(items: hsCardsVM.latestCardSets.count, itemWidth: 200, itemSpacing: 15))
         }
-        .frame(width: 380, height: 250, alignment: .center)
     }
 }
 
@@ -40,11 +38,10 @@ struct LatestCardsSetSectionView_Previews: PreviewProvider {
      HStack {
          ForEach(hsCardsVM.latestCardSets) {card in
              CardCellView(cardModel: card)
-                 
-                 
+                 .frame(width: 260, height: 100)
          }
      }
      .modifier(ScrollingHStackModifier(items: hsCardsVM.latestCardSets.count, itemWidth: 200, itemSpacing: 15))
  }
- .frame(width: 370, height: 300, alignment: .center)
+ .frame(width: 380, height: 250, alignment: .center)
  */

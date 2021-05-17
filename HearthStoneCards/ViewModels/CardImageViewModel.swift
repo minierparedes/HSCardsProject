@@ -21,11 +21,11 @@ class CardImageViewModel: ObservableObject {
     init(imgURL: String, key: String) {
         imgURLString = imgURL
         imageKey = key
-        fetchImages()
+        getImage()
     }
     
     func getImage() {
-        if let savedImage = manager.getFromCache(key: imageKey) {
+        if let savedImage = manager.get(key: imageKey) {
             image = savedImage
             print("Getting saved image!")
         } else {
@@ -36,6 +36,7 @@ class CardImageViewModel: ObservableObject {
     
 
     func fetchImages() {
+        print("Fetching card images now!")
         isLoading = true
         guard let url = URL(string: imgURLString) else {
             isLoading = false
@@ -52,8 +53,8 @@ class CardImageViewModel: ObservableObject {
                       let image = returnedImage else { return }
                 
                 self.image = image
-                self.manager.addToCache(key: self.imageKey, value: image)
-                print("Image ViewModel Recieved Data: \(self.image)")
+                self.manager.add(key: self.imageKey, value: image)
+               
                 
             }
             .store(in: &cancellable)
