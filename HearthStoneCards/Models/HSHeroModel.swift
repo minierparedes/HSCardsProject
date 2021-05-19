@@ -13,6 +13,7 @@ struct HSHeroModel: Identifiable {
     let name: String
     let characterIMG: String
     let iconIMG: String
+    let classBadge: String
 }
 
 
