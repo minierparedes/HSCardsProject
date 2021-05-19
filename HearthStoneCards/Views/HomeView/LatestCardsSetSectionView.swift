@@ -11,7 +11,7 @@ struct LatestCardsSetSectionView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 60) {
+            HStack(spacing: 30) {
                 ForEach(hsCardsVM.latestCardSets) {card in
                     CardCellView(cardModel: card)
                         .frame(width: 150, height: 250)

@@ -10,30 +10,32 @@ import SwiftUI
 struct HeroSectionView: View {
     var body: some View {
         TabView{
-            ForEach(0..<5) {item in
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Standard Bundle Available Now")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.leading)
-                        Text("Hello World")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.secondary)
-                        Image("news\(item)")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 390, height: 250)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                    }
-                    .frame(width: 380)
+            ForEach(0..<10) {item in
+                VStack(alignment: .leading) {
+                    Text("Standard Bundle")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Text("Hello World")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.secondary)
+                    Image("news\(item)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 360, height: 250)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
+                
+              
             }
         }
-        .padding()
-        .frame(width: UIScreen.main.bounds.width, height: 350)
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        .frame(height: 350)
+        .padding(.top, 30)
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+        .animation(.easeOut)
+        
+        
+       
     }
 }
 

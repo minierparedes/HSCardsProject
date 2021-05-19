@@ -11,6 +11,7 @@ struct HeroClassSectionView: View {
     @StateObject var heroesVM: HSHeroesViewModel = HSHeroesViewModel()
     @State var didSlide: Bool = false
     @State var isScrolled = 0
+    @State private var selectedHero: HSHeroModel? = nil
     var body: some View {
         ZStack {
             ForEach(heroesVM.heroes.reversed()) {hero in
@@ -27,7 +28,9 @@ struct HeroClassSectionView: View {
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
-                            Button(action: {}) {
+                            Button(action: {
+                                self.selectedHero = hero
+                            }) {
                                 Text("button")
                             }
                         }
@@ -74,8 +77,13 @@ struct HeroClassSectionView: View {
                         }
                     }
                 }))
+                .sheet(item: $selectedHero, content: { hero in
+                    HeroDetailView(hero: hero)
+                })
                 
             }
+            
+            
         }
         .frame(height: UIScreen.main.bounds.height / 1.8)//max height
         .padding(.horizontal, 20)

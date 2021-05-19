@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */; };
+		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
 		8DA6B92E264D0A680082DB06 /* CardImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */; };
 		8DA6B939264E083E0082DB06 /* CardBacksIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelCacheManager.swift; sourceTree = "<group>"; };
+		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
 		8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageCellView.swift; sourceTree = "<group>"; };
 		8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBacksIMG.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				8DB60F232645144C008029C3 /* CardSetsView.swift */,
 				8DB60F262645146B008029C3 /* SearchView.swift */,
 				8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */,
+				8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */,
 				8DB60F2126451433008029C3 /* CardsView.swift in Sources */,
 				8DB60F2F26456CC9008029C3 /* HSCardsViewModel.swift in Sources */,
+				8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */,
 				8DB60F272645146B008029C3 /* SearchView.swift in Sources */,
 				8DB60F3226456FBA008029C3 /* HSCardsModelDataService.swift in Sources */,
 				8DE757EC264CC7B2002DB0AC /* ParallaxScrollingView.swift in Sources */,
