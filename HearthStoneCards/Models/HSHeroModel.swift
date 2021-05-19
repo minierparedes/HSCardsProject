@@ -12,7 +12,7 @@ struct HSHeroModel: Identifiable {
     var offset: CGFloat
     let name: String
     let characterIMG: String
-//    let iconIMG: String
+    let iconIMG: String
 }
 
 

@@ -23,16 +23,22 @@ struct HeroClassSectionView: View {
                             .frame(width: heroesVM.calculateWidth(), height: (UIScreen.main.bounds.height / 1.8) - CGFloat(hero.id - isScrolled) * 50)//dynamic frame
                             .cornerRadius(15)
                             
-                        VStack(alignment: .leading, spacing: 18) {
+                        VStack(alignment: .center, spacing: 18) {
                             Text(hero.name)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
+                                
                             Button(action: {
                                 self.selectedHero = hero
                             }) {
-                                Text("button")
+                                Image(hero.iconIMG)
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(.yellow)
+                                    .shadow(color: .black, radius: 6, x: 0, y: 1)
                             }
+                            .offset(x: 50, y: 20)
                         }
                         .frame(width: heroesVM.calculateWidth() - 40)
                         .padding(.leading, 40)

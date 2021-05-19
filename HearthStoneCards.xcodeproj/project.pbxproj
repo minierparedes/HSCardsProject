@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */; };
+		8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D325B8A265549770007972E /* CategoriesBarView.swift */; };
 		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
 		8DA6B92E264D0A680082DB06 /* CardImageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelCacheManager.swift; sourceTree = "<group>"; };
+		8D325B8A265549770007972E /* CategoriesBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBarView.swift; sourceTree = "<group>"; };
 		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
 		8DA6B92D264D0A680082DB06 /* CardImageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageCellView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D325B89265549500007972E /* CardsView */ = {
+			isa = PBXGroup;
+			children = (
+				8D325B8A265549770007972E /* CategoriesBarView.swift */,
+			);
+			path = CardsView;
+			sourceTree = "<group>";
+		};
 		8DB60EFB26451206008029C3 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 		8DB60F1726451226008029C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D325B89265549500007972E /* CardsView */,
 				8DB60F3726466394008029C3 /* HomeView */,
 				8DB60F3426464998008029C3 /* CardCellView.swift */,
 				8DB60F4126467608008029C3 /* CardFlipView.swift */,
@@ -248,6 +259,7 @@
 				8DB60F4E2648BE6E008029C3 /* HSHeroModel.swift in Sources */,
 				8DA6B92E264D0A680082DB06 /* CardImageCellView.swift in Sources */,
 				8DB60F4B2646C3D7008029C3 /* HeroClassSectionView.swift in Sources */,
+				8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */,
 				8DB60F2C26452A65008029C3 /* HSCardModel.swift in Sources */,
 				8DB60F0A26451206008029C3 /* ContentView.swift in Sources */,
 				8DB7C6412650F6E5005E5CB0 /* HSCardModelFileManager.swift in Sources */,
