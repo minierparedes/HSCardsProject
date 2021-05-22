@@ -9,21 +9,66 @@ import SwiftUI
 
 struct CardsGridView: View {
     let columns: [GridItem] = [
-        GridItem(.flexible(), spacing: 15, alignment: nil),
-        GridItem(.flexible(), spacing: 15, alignment: nil)
+        GridItem(.flexible(), spacing: 6, alignment: nil),
+        GridItem(.flexible(), spacing: 6, alignment: nil)
     ]
     var body: some View {
-        ScrollView {
+        VStack {
+            Rectangle()
+                .fill(Color.orange)
+                .frame(height: 250)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,
-                spacing: nil,
-                pinnedViews: [],
+                spacing: 6,
+                pinnedViews: [.sectionHeaders],
                 content: {
-                    ForEach(0..<30) {card in
-                        RoundedRectangle(cornerRadius: 18)
-                            .frame(height: 250)
-                    }            })
+                    Section(header:
+                                HStack {
+                                    
+                                    Text("Demon Hunter")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.secondary)
+                                    Image("Class_DemonHunter")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(.yellow)
+                                        .frame(width: 50, height: 50)
+                                    Spacer()
+                                }
+                    ) {
+                        ForEach(0..<10) {card in
+                            Image("card1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 240, height: 250)
+                        }
+                    }
+                    
+                    Section(header:
+                                HStack {
+                                    
+                                    Text("Druid")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.secondary)
+                                    Image("Class_Druid_Alt")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(.yellow)
+                                        .frame(width: 50, height: 50)
+                                    Spacer()
+                                }
+                    ) {
+                        ForEach(0..<10) {card in
+                            Image("card1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 240, height: 250)
+                        }
+                    }
+                })
                 .padding()
         }
     }
