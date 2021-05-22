@@ -22,6 +22,7 @@ struct HeroSectionView: View {
                     Image("news\(item)")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+                        .overlay(Color.black.opacity(0.2))
                         .frame(width: 360, height: 250)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }

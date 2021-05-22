@@ -8,20 +8,29 @@
 import SwiftUI
 
 struct CardsView: View {
-    @StateObject var hscardsVM: HSCardsViewModel = HSCardsViewModel()
+    @State var selectedCategory: String = "Standard"
     var body: some View {
         NavigationView {
-            ScrollView(.horizontal) {
-                HStack(spacing: 60) {
-                    ForEach(hscardsVM.latestCardSets) {card in
-                        CardCellView(cardModel: card)
-                            .frame(width: 150, height: 250)
+            VStack {
+                CategoriesBarView(selectedCategory: $selectedCategory)
+                
+                ScrollView {
+                    if selectedCategory == "Standard" {
+                        LatestCardsSetSectionView()
+                    } else if selectedCategory == "Wild" {
+                        LatestCardsSetSectionView()
+                    } else if selectedCategory == "Classic" {
+                        LatestCardsSetSectionView()
+                    } else if selectedCategory == "Forged in the barrens" {
+                        LatestCardsSetSectionView()
+                    }else if selectedCategory == "Madness at the Darkmoon Faire" {
+                        LatestCardsSetSectionView()
                     }
                 }
             }
-            
             .navigationTitle("Cards")
         }
+            
     }
 }
 

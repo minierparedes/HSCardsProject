@@ -10,38 +10,35 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack(alignment: .leading) {
-                    HeroSectionView()
-                        .padding(.bottom, 20)
-                        
+        ScrollView {
+            VStack(alignment: .leading) {
+                HeroSectionView()
+                    .padding(.bottom, 20)
                     
-                    Text("Discover")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                        .foregroundColor(.primary)
-                        .padding(.bottom, 5)
+                
+                Text("Discover")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                    .foregroundColor(.primary)
+                    .padding(.bottom, 5)
+                
+                LatestCardsSetSectionView()
+                    .padding()
                     
-                    LatestCardsSetSectionView()
-                        .padding()
-                        
-                    
-                    Text("HearthStone Heroes")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                        .foregroundColor(.primary)
-                        .padding(.bottom, 20)
-                    
-                    HeroClassSectionView()
-                }
-                .padding(.bottom, 50)
+                
+                Text("HearthStone Heroes")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                    .foregroundColor(.primary)
+                    .padding(.bottom, 20)
+                
+                HeroClassSectionView()
             }
-            .navigationTitle("HearthStone")
-            
+            .padding(.bottom, 50)
         }
+        .navigationTitle("HearthStone")
     }
 }
 
