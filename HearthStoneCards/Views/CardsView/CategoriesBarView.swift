@@ -23,17 +23,22 @@ struct CategoriesBarView: View {
                         }, label: {
                             VStack(spacing: 4) {
                                 Text(category)
-                                    .font(.title3)
+                                    .font(.subheadline)
                                     .fontWeight(.semibold)
-                                    .foregroundColor(selectedCategory == category ? .primary : .secondary)
+                                    .frame(height: 30)
+                                    
+                                    .padding(.horizontal)
+                                    .background(selectedCategory == category ? Color.black.opacity(0.4) : Color.black.opacity(0.1))
+                                    .clipShape(Capsule())
+                                    .foregroundColor(selectedCategory == category ? .white : .secondary)
                                     .matchedGeometryEffect(id: category, in: animation, isSource: true)
                                 
                             }
                         })
                         .accentColor(.primary)
                     }
-                    .overlay(RoundedRectangle(cornerRadius: 5)
-                                .frame(height: 2)
+                    .overlay(Capsule()
+                                .stroke(Color(.systemGray5), lineWidth: 1)
                                 .matchedGeometryEffect(id: selectedCategory, in: animation, isSource: false)
                                 .foregroundColor(.yellow))
                 }

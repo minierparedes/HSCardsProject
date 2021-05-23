@@ -37,5 +37,8 @@ struct CardsView: View {
 struct CardsView_Previews: PreviewProvider {
     static var previews: some View {
         CardsView()
+            .preferredColorScheme(.dark)
+            
+            
     }
 }

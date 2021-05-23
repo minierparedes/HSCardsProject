@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct CardsGridView: View {
+    
     let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 6, alignment: nil),
         GridItem(.flexible(), spacing: 6, alignment: nil)
     ]
     var body: some View {
-        VStack {
+        ScrollView {
             Rectangle()
-                .fill(Color.orange)
-                .frame(height: 250)
+                .overlay(
+                    Image("theWitchwood")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                )
+                .frame(height: 180)
+                .padding(.bottom, 30)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,
