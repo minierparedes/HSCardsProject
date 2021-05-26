@@ -1,32 +1,33 @@
 //
-//  HSCardModelManager.swift
+//  HSCardModelImageFileManager.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/16.
+//  Created by ethancr0wn on 2021/05/26.
 //
+
 import Foundation
 import SwiftUI
 
-class HSCardModelFileManager {
-    static let instance = HSCardModelFileManager()
-    let folderName = "downloaded_hsFlipCardImages"
+class HSCardModelImageFileManager {
     
+    static let instance = HSCardModelImageFileManager()
+    let folderName: String = "downloaded_hsCardImages"
     private init() {
         createFolderIfNeeded()
     }
     
     private func createFolderIfNeeded() {
-        guard
-            let url = getFolderPath() else { return }
+        guard let url = getFolderPath() else { return }
         
         if !FileManager.default.fileExists(atPath: url.path) {
             do {
                 try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
                 print("Created folder!")
             } catch let error {
-                print("Error creating folder. \(error)")
+                print("Error creating folder: \(error) ")
             }
         }
+        
     }
     
     private func getFolderPath() -> URL? {
@@ -43,23 +44,19 @@ class HSCardModelFileManager {
     }
     
     func add(key: String, value: UIImage) {
-        guard
-            let data = value.pngData(),
-            let url = getImagePath(key: key) else { return }
+        guard let data = value.pngData(),
+              let url = getImagePath(key: key) else { return }
         
         do {
             try data.write(to: url)
         } catch let error {
-            print("Error saving to file manager. \(error)")
+            print("Error saving to File Manager: \(error) ")
         }
     }
     
     func get(key: String) -> UIImage? {
-        guard
-            let url = getImagePath(key: key),
-            FileManager.default.fileExists(atPath: url.path) else { return nil }
+        guard let url = getImagePath(key: key),
+              FileManager.default.fileExists(atPath: url.path) else { return nil }
         return UIImage(contentsOfFile: url.path)
     }
-    
 }
-

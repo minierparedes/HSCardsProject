@@ -14,12 +14,25 @@ class CardImageLoadingViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     
     var cancellables = Set<AnyCancellable>()
+    let manager = HSCardModelImageCacheManager.instance
     
     let urlString: String
+    let imageKey: String
     
-    init(url: String) {
+    init(url: String, key: String) {
         urlString = url
-        fetCardImages()
+        imageKey = key
+        getImage()
+    }
+    
+    func getImage() {
+        if let savedImage = manager.get(key: imageKey) {
+            cardImage = savedImage
+            print("Getting saved cardImage!")
+        } else {
+            fetCardImages()
+            print("CardImage VM: Downloading image now!")
+        }
     }
     
     func fetCardImages() {
@@ -37,7 +50,10 @@ class CardImageLoadingViewModel: ObservableObject {
             .sink { [weak self] ( _ ) in
                 self?.isLoading = false
             } receiveValue: { [weak self] (receivedImage) in
-                self?.cardImage = receivedImage
+                guard let self = self,
+                      let image = receivedImage else { return }
+                self.cardImage = image
+                self.manager.add(key: self.imageKey, value: image)
             }
             .store(in: &cancellables)
 

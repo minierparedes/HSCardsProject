@@ -10,7 +10,11 @@ import SwiftUI
 struct TESTRow: View {
     let cardModel: HSCardModel
     var body: some View {
-        Text(cardModel.name!)
+        VStack {
+            Text(cardModel.name!)
+            Text(cardModel.type!)
+            Text(cardModel.rarity ?? "")
+        }
     }
 }
 

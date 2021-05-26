@@ -22,13 +22,8 @@ struct CardsGridView: View {
     var body: some View {
         VStack {
             Rectangle()
-                .overlay(
-                    Image("theWitchwood")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                )
-                .frame(height: 180)
-                .padding(.bottom, 30)
+                .fill(Color.purple)
+                .frame(height: 250)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,

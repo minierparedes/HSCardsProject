@@ -10,8 +10,8 @@ import SwiftUI
 struct CardImageView: View {
     @StateObject var cardImageLoadingVM: CardImageLoadingViewModel
     
-    init(url: String) {
-        _cardImageLoadingVM = StateObject(wrappedValue: CardImageLoadingViewModel(url: url))
+    init(url: String, key: String) {
+        _cardImageLoadingVM = StateObject(wrappedValue: CardImageLoadingViewModel(url: url, key: key))
     }
     var body: some View {
         ZStack {
@@ -30,7 +30,7 @@ struct CardImageView: View {
 
 struct CardImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CardImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png")
+        CardImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", key: "1")
             .previewLayout(.sizeThatFits)
     }
 }

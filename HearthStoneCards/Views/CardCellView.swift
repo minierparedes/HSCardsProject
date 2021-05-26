@@ -10,7 +10,7 @@ import SwiftUI
 struct CardCellView: View {
     let cardModel: HSCardModel
     var body: some View {
-        CardImageView(url: cardModel.cardImageURL)
+        CardImageView(url: cardModel.cardImageURL, key: cardModel.id)
     }
 }
 

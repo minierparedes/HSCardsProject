@@ -18,7 +18,7 @@ struct CardsView: View {
                     if selectedCategory == "Standard" {
                         CardsGridView()
                     } else if selectedCategory == "Wild" {
-                        LatestCardsSetSectionView()
+                        SECTIONTESTVIEW()
                     } else if selectedCategory == "Classic" {
                         LatestCardsSetSectionView()
                     } else if selectedCategory == "Forged in the barrens" {
