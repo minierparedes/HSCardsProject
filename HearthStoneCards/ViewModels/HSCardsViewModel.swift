@@ -25,7 +25,7 @@ class HSCardsViewModel: ObservableObject {
     let dataService = HSCardsModelDataService.hsCardsModelDataServiceInstance
     
     
-    let cardClassNames: [String] = ["HUNTER", "DEMONHUNTER", "NEUTRAL", "MAGE", "PRIEST", "WARLOCK", "ROGUE", "DRUID", "SHAMAN", "PRIEST", "WARRIOR"]
+    let cardClassNames: [String] = ["HUNTER", "DEMONHUNTER", "NEUTRAL", "MAGE", "PRIEST", "WARLOCK", "ROGUE", "DRUID", "SHAMAN", "PALADIN", "WARRIOR"]
     
     let wildCardSetNamesYear2021: [String] = ["NAXX", "GVG", "BRM", "TGT", "LOE", "OG", "KARA", "GANGS", "UNGORO", "ICECROWN", "LOOTAPALOOZA", "GILNEAS", "BOOMSDAY", "TROLL", "DALARAN", "ULDUM", "DRAGONS", "YEAR_OF_THE_DRAGON", "DEMON_HUNTER_INITIATE", "LEGACY"]
     

@@ -14,7 +14,7 @@ struct LatestCardsSetSectionView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
                     ForEach(hsCardsVM.latestCardSets) {card in
-                        CardCellView(cardModel: card)
+                        FlipCardCellView(cardModel: card)
                             .frame(width: 150, height: 250)
                     }
                 }

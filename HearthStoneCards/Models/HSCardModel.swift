@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HSCardModel: Identifiable, Codable {
+struct HSCardModel: Identifiable, Codable, Hashable {
     let id: String
     let name: String?
     let rarity: String?

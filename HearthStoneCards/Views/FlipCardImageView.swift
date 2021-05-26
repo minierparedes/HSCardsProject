@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardImageCellView: View {
+struct FlipCardImageView: View {
     @StateObject var cardImgVM: CardImageViewModel
     let cardBack: HSCardModel.CardBackIMG
     init(url: String, cardBack: HSCardModel.CardBackIMG, key: String) {
@@ -18,6 +18,7 @@ struct CardImageCellView: View {
         ZStack {
             if cardImgVM.isLoading {
                 ProgressView()
+                    .frame(width: 250, height: 250)
             } else if let img = cardImgVM.image {
                 CardFlipView(front: {Image(uiImage: img).resizable().aspectRatio(contentMode: .fit).frame(width: 250)}, back: {cardImgVM.getCardBackImg(HSCardModel.CardBackIMG(rawValue: cardBack.rawValue)!).frame(width: 135, height: 190).offset(x: -3, y: -3)})
                
@@ -28,7 +29,7 @@ struct CardImageCellView: View {
 
 struct CardImageCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CardImageCellView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", cardBack: .blackTemple, key: "1")
+        FlipCardImageView(url: "https://art.hearthstonejson.com/v1/render/latest/enUS/256x/EX1_001.png", cardBack: .blackTemple, key: "1")
             .frame(width: 250, height: 260)
             .previewLayout(.sizeThatFits)
     }

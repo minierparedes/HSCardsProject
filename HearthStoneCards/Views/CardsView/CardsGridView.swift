@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct CardsGridView: View {
-    
+    @StateObject var hsCardCategoryVM: HSCardCategoryViewModel = HSCardCategoryViewModel()
+    var dictionaryGroup: [String: [HSCardModel]] {
+        Dictionary(grouping: hsCardCategoryVM.cardCategoryData, by: { $0.cardClass! })
+    }
+    var uniq: [String] {
+        dictionaryGroup.map({ $0.key }).sorted()
+    }
     let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 6, alignment: nil),
         GridItem(.flexible(), spacing: 6, alignment: nil)
     ]
     var body: some View {
-        ScrollView {
+        VStack {
             Rectangle()
                 .overlay(
                     Image("theWitchwood")
@@ -26,56 +32,19 @@ struct CardsGridView: View {
             LazyVGrid(
                 columns: columns,
                 alignment: .center,
-                spacing: 6,
+                spacing: nil,
                 pinnedViews: [.sectionHeaders],
                 content: {
-                    Section(header:
-                                HStack {
-                                    
-                                    Text("Demon Hunter")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.secondary)
-                                    Image("Class_DemonHunter")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(.yellow)
-                                        .frame(width: 50, height: 50)
-                                    Spacer()
-                                }
-                    ) {
-                        ForEach(0..<10) {card in
-                            Image("card1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 240, height: 250)
+                    ForEach(uniq, id: \.self) { section in
+                        Section(header:
+                                    SectionHeaderView(sectionTitle: section, sectionBadge: section)
+                        ) {
+                            ForEach(dictionaryGroup[section]!) {card in
+                                CardCellView(cardModel: card)
+                            }
                         }
                     }
-                    
-                    Section(header:
-                                HStack {
-                                    
-                                    Text("Druid")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.secondary)
-                                    Image("Class_Druid_Alt")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .foregroundColor(.yellow)
-                                        .frame(width: 50, height: 50)
-                                    Spacer()
-                                }
-                    ) {
-                        ForEach(0..<10) {card in
-                            Image("card1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 240, height: 250)
-                        }
-                    }
-                })
-                .padding()
+            })
         }
     }
 }

@@ -1,13 +1,13 @@
 //
-//  CategoriesBarView.swift
+//  TEMP_CARDGRID.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/19.
+//  Created by ethancr0wn on 2021/05/23.
 //
 
 import SwiftUI
 
-struct CategoriesBarView: View {
+struct TEMPCategoriesBarView: View {
     let categories = ["Standard", "Wild", "Classic", "Forged in the barrens", "Madness at the Darkmoon Faire"]
     @Binding var selectedCategory: String
     @Namespace private var animation
@@ -23,21 +23,17 @@ struct CategoriesBarView: View {
                         }, label: {
                             VStack(spacing: 4) {
                                 Text(category)
-                                    .font(.subheadline)
+                                    .font(.title3)
                                     .fontWeight(.semibold)
-                                    .frame(height: 30)
-                                    .padding(.horizontal)
-                                    .background(selectedCategory == category ? Color.black.opacity(0.4) : Color.black.opacity(0.1))
-                                    .clipShape(Capsule())
-                                    .foregroundColor(selectedCategory == category ? .white : .secondary)
+                                    .foregroundColor(selectedCategory == category ? .primary : .secondary)
                                     .matchedGeometryEffect(id: category, in: animation, isSource: true)
                                 
                             }
                         })
                         .accentColor(.primary)
                     }
-                    .overlay(Capsule()
-                                .stroke(Color(.systemGray5), lineWidth: 1)
+                    .overlay(RoundedRectangle(cornerRadius: 5)
+                                .frame(height: 2)
                                 .matchedGeometryEffect(id: selectedCategory, in: animation, isSource: false)
                                 .foregroundColor(.yellow))
                 }
@@ -46,10 +42,3 @@ struct CategoriesBarView: View {
         .padding()
     }
 }
-
-//struct CategoriesBarView_Previews: PreviewProvider {
-//     
-//    static var previews: some View {
-//        CategoriesBarView(selectedCategory: )
-//    }
-//}
