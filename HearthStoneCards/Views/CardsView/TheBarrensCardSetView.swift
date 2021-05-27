@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct CardsGridView: View {
+struct TheBarrensCardSetView: View {
     @StateObject var hsCardCategoryVM: HSCardCategoryViewModel = HSCardCategoryViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
-        Dictionary(grouping: hsCardCategoryVM.cardCategoryData, by: { $0.cardClass! })
+        Dictionary(grouping: hsCardCategoryVM.theBarrensCardSetDATA, by: { $0.cardClass! })
     }
     var uniq: [String] {
         dictionaryGroup.map({ $0.key }).sorted()
@@ -46,6 +46,6 @@ struct CardsGridView: View {
 
 struct CardsGridView_Previews: PreviewProvider {
     static var previews: some View {
-        CardsGridView()
+        TheBarrensCardSetView()
     }
 }

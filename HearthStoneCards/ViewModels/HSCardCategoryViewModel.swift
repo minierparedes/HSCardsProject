@@ -9,19 +9,7 @@ import Combine
 import SwiftUI
 
 class HSCardCategoryViewModel: Identifiable, ObservableObject {
-    @Published var cardCategoryData: [HSCardModel] = []
-    @Published var demonHunterClass: [HSCardModel] = []
-    @Published var druidClass: [HSCardModel] = []
-    @Published var hunterClass: [HSCardModel] = []
-    @Published var mageClass: [HSCardModel] = []
-    @Published var paladinClass: [HSCardModel] = []
-    @Published var priestClass: [HSCardModel] = []
-    @Published var rogueClass: [HSCardModel] = []
-    @Published var shamanClass: [HSCardModel] = []
-    @Published var warlockClass: [HSCardModel] = []
-    @Published var warriorClass: [HSCardModel] = []
-    @Published var neutralClass: [HSCardModel] = []
-   
+    @Published var theBarrensCardSetDATA: [HSCardModel] = []
     @Published var groupedCardClasses = [[HSCardModel]]()
     
     
@@ -37,14 +25,18 @@ class HSCardCategoryViewModel: Identifiable, ObservableObject {
     func addSubscribers() {
         dataService.$hsCardsModelData
             .sink { [weak self] (receivedHSCardModel) in
-                self?.cardCategoryData = receivedHSCardModel.filter({ $0.set == "THE_BARRENS" && $0.cardClass == "NEUTRAL" && $0.type == "MINION" })
-                print("*****\n cardCategoryData \n***** element count: \(self?.cardCategoryData.count)")
+                self?.theBarrensCardSetDATA = receivedHSCardModel
+                    .compactMap({ $0 })
+                    .filter({ $0.set == "THE_BARRENS" && $0.name != "???" })
+                    
+                print("*****\n cardCategoryData \n***** element count: \(self?.theBarrensCardSetDATA.count)")
+                print("*****\n cardCategoryData \n***** elements: \(self?.theBarrensCardSetDATA)")
             }
             .store(in: &cancellables)
     }
         
      func groupCardClasses() {
-        let groupedClassesDictionary = Dictionary(grouping: cardCategoryData) { (elementCardClass) -> String in
+        let groupedClassesDictionary = Dictionary(grouping: theBarrensCardSetDATA) { (elementCardClass) -> String in
             return elementCardClass.cardClass ?? ""
         }
         

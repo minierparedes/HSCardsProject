@@ -16,7 +16,7 @@ struct CardsView: View {
                 
                 ScrollView {
                     if selectedCategory == "Standard" {
-                        CardsGridView()
+                        TheBarrensCardSetView()
                     } else if selectedCategory == "Wild" {
                         SECTIONTESTVIEW()
                     } else if selectedCategory == "Classic" {

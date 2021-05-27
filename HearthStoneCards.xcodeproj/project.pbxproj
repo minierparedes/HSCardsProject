@@ -14,8 +14,9 @@
 		8D373214265B43B1009FF0F5 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373213265B43B1009FF0F5 /* CardImageView.swift */; };
 		8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */; };
 		8D37321E265B798A009FF0F5 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37321D265B798A009FF0F5 /* CardCellView.swift */; };
+		8D3A4519265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A4518265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift */; };
 		8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */; };
-		8D50830E2659442F0037AEAB /* CardsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* CardsGridView.swift */; };
+		8D50830E2659442F0037AEAB /* TheBarrensCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */; };
 		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
 		8DA6B92E264D0A680082DB06 /* FlipCardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B92D264D0A680082DB06 /* FlipCardImageView.swift */; };
@@ -54,8 +55,9 @@
 		8D373213265B43B1009FF0F5 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		8D37321D265B798A009FF0F5 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
+		8D3A4518265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadnessAtTheDarkmoonFaireView.swift; sourceTree = "<group>"; };
 		8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
-		8D50830D2659442F0037AEAB /* CardsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGridView.swift; sourceTree = "<group>"; };
+		8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBarrensCardSetView.swift; sourceTree = "<group>"; };
 		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
 		8DA6B92D264D0A680082DB06 /* FlipCardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardImageView.swift; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 			children = (
 				8DB60F2026451433008029C3 /* CardsView.swift */,
 				8D325B8A265549770007972E /* CategoriesBarView.swift */,
-				8D50830D2659442F0037AEAB /* CardsGridView.swift */,
+				8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */,
+				8D3A4518265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift */,
 				8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */,
 				8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */,
 				8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */,
@@ -289,6 +292,7 @@
 				8DB60F1E2645141C008029C3 /* HomeView.swift in Sources */,
 				8DB60F4E2648BE6E008029C3 /* HSHeroModel.swift in Sources */,
 				8DA6B92E264D0A680082DB06 /* FlipCardImageView.swift in Sources */,
+				8D3A4519265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift in Sources */,
 				8DB60F4B2646C3D7008029C3 /* HeroClassSectionView.swift in Sources */,
 				8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */,
 				8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */,
@@ -314,7 +318,7 @@
 				8DB60F0826451206008029C3 /* HearthStoneCardsApp.swift in Sources */,
 				8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */,
 				8D37321E265B798A009FF0F5 /* CardCellView.swift in Sources */,
-				8D50830E2659442F0037AEAB /* CardsGridView.swift in Sources */,
+				8D50830E2659442F0037AEAB /* TheBarrensCardSetView.swift in Sources */,
 				8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */,
 				8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */,
 				8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */,

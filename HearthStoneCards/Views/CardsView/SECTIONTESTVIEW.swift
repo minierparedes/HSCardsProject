@@ -13,7 +13,7 @@ struct TESTRow: View {
         VStack {
             Text(cardModel.name!)
             Text(cardModel.type!)
-            Text(cardModel.rarity ?? "")
+            Text(cardModel.rarity ?? "N/A")
         }
     }
 }
@@ -21,7 +21,7 @@ struct TESTRow: View {
 struct SECTIONTESTVIEW: View {
     @StateObject var hsCardCategoryVM = HSCardCategoryViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
-        Dictionary(grouping: hsCardCategoryVM.cardCategoryData, by: { $0.cardClass! })
+        Dictionary(grouping: hsCardCategoryVM.theBarrensCardSetDATA, by: { $0.cardClass! })
     }
     var uniq: [String] {
         dictionaryGroup.map({ $0.key }).sorted()
