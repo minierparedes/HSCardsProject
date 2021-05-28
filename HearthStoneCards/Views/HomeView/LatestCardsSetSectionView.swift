@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LatestCardsSetSectionView: View {
-    @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
+    @StateObject var hsCardsVM: HSHomeViewModel = HSHomeViewModel()
     var body: some View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {

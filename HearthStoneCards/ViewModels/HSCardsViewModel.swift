@@ -1,54 +1,73 @@
 //
-//  HSCardsViewModel.swift
+//  HSCardCategoryViewModel.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/07.
+//  Created by ethancr0wn on 2021/05/23.
 //
 
 import Combine
 import SwiftUI
 
-class HSCardsViewModel: ObservableObject {
-    @Published var hsCardsData: [HSCardModel] = []
-    @Published var cardSets: [HSCardModel] = []
-    @Published var cardClasses: [HSCardModel] = []
-    @Published var cardTypes: [HSCardModel] = []
-    @Published var wildFormatCards: [HSCardModel] = []
-    @Published var standardFormatCards: [HSCardModel] = []
-    @Published var adventureGameModeCards: [HSCardModel] = []
-    @Published var expansionCardSets: [HSCardModel] = []
-    @Published var latestCardSets: [HSCardModel] = []
+class HSCardsViewModel: Identifiable, ObservableObject {
+    @Published var theBarrensCardSetDATA: [HSCardModel] = []
+    @Published var darkmoonFaireCardSetDATA: [HSCardModel] = []
+    @Published var standardCardSetDATA: [HSCardModel] = []
+   
+    let standardCardSetNamesYear2021: [String] = ["BLACK_TEMPLE", "SCHOLOMANCE", "DARKMOON_FAIRE", "THE_BARRENS", "CORE"]
     
-    @Published var isLoading: Bool = false
     var cancellables = Set<AnyCancellable>()
     
     let dataService = HSCardsModelDataService.hsCardsModelDataServiceInstance
     
-    
-    let cardClassNames: [String] = ["HUNTER", "DEMONHUNTER", "NEUTRAL", "MAGE", "PRIEST", "WARLOCK", "ROGUE", "DRUID", "SHAMAN", "PALADIN", "WARRIOR"]
-    
-    let wildCardSetNamesYear2021: [String] = ["NAXX", "GVG", "BRM", "TGT", "LOE", "OG", "KARA", "GANGS", "UNGORO", "ICECROWN", "LOOTAPALOOZA", "GILNEAS", "BOOMSDAY", "TROLL", "DALARAN", "ULDUM", "DRAGONS", "YEAR_OF_THE_DRAGON", "DEMON_HUNTER_INITIATE", "LEGACY"]
-    
-    let standardCardSetNamesYear2021: [String] = ["BLACK_TEMPLE", "SCHOLOMANCE", "DARKMOON_FAIRE", "THE_BARRENS", "CORE",]
-    
-    let adventureCardSetNamesYear2021: [String] = ["NAXX", "BRM", "LOE", "KARA", "GANGS"]
-    
-    let expansionCardSetNamesYear2021: [String] = ["UNGORO", "ICECROWN", "LOOTAPALOOZA", "GILNEAS", "BOOMSDAY", "TROLL", "DALARAN", "ULDUM", "DRAGONS", "YEAR_OF_THE_DRAGON", "GVG", "TGT", "OG", "BLACK_TEMPLE", "SCHOLOMANCE", "DARKMOON_FAIRE", "THE_BARRENS",]
-    
     init() {
-        addSubscriber()
+        addSubscribers()
     }
     
-    func addSubscriber() {
-        isLoading = dataService.isLoadingDataService 
+    func addSubscribers() {
         dataService.$hsCardsModelData
             .sink { [weak self] (receivedHSCardModel) in
-                self?.hsCardsData = receivedHSCardModel
-                self?.cardSets = self!.hsCardsData.filter({ $0.set == "THE_BARRENS" })
-                self?.cardClasses = self!.hsCardsData.filter({ self!.cardClassNames.contains($0.cardClass ?? "") })
-                self?.wildFormatCards = self!.hsCardsData.filter({ self!.wildCardSetNamesYear2021.contains($0.set ?? "") })
-                self?.latestCardSets = self!.hsCardsData.filter({ $0.set == "THE_BARRENS" && $0.cardClass == "NEUTRAL" && $0.rarity == "RARE"})
+                self?.theBarrensCardSetDATA = receivedHSCardModel
+                    .compactMap({ $0 })
+                    .filter({ $0.set == "THE_BARRENS" && $0.name != "???" })
+                self?.darkmoonFaireCardSetDATA = receivedHSCardModel
+                    .compactMap({ $0 })
+                    .filter({ $0.set == "DARKMOON_FAIRE" && $0.name != "???" })
+                self?.standardCardSetDATA = receivedHSCardModel
+                    .compactMap({ $0 })
+                    .filter({ self!.standardCardSetNamesYear2021.contains($0.set ?? "") && $0.name != "???" })
+                
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.theBarrensCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.darkmoonFaireCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.standardCardSetDATA.count)")
+                
             }
             .store(in: &cancellables)
     }
+        
+     
 }
+
+
+/*
+ .filter({ $0.set == "THE_BARRENS" && $0.cardClass == "NEUTRAL" && $0.cardClass == "DEMONHUNTER" && $0.cardClass == "DRUID" && $0.cardClass == "HUNTER" && $0.cardClass == "MAGE" && $0.cardClass == "PRIEST" && $0.cardClass == "WARLOCK" && $0.cardClass == "ROGUE" && $0.cardClass == "SHAMAN" && $0.cardClass == "WARRIOR" && $0.cardClass == "PALADIN" && $0.cardClass == "ROGUE"})
+ */
+
+
+
+/*
+ Func for Dictionary grouping of array elemenets **PENDING**
+ 
+ @Published var groupedCardClasses = [[HSCardModel]]()
+ 
+ func groupCardClasses() {
+    let groupedClassesDictionary = Dictionary(grouping: theBarrensCardSetDATA) { (elementCardClass) -> String in
+        return elementCardClass.cardClass ?? ""
+    }
+    
+    let keys = groupedClassesDictionary.keys.sorted()
+    keys.forEach { (key) in
+        groupedCardClasses.append(groupedClassesDictionary[key]!)
+    }
+}
+ 
+ */

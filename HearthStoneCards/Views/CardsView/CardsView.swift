@@ -16,15 +16,18 @@ struct CardsView: View {
                 
                 ScrollView {
                     if selectedCategory == "Standard" {
-                        TheBarrensCardSetView()
+                        StandardCardSetView()
+                            .font(.title)
                     } else if selectedCategory == "Wild" {
-                        SECTIONTESTVIEW()
+                        Text("WILD")
+                            .font(.title)
                     } else if selectedCategory == "Classic" {
-                        LatestCardsSetSectionView()
+                        Text("CLASSIC")
+                            .font(.title)
                     } else if selectedCategory == "Forged in the barrens" {
-                        LatestCardsSetSectionView()
+                        TheBarrensCardSetView()
                     }else if selectedCategory == "Madness at the Darkmoon Faire" {
-                        LatestCardsSetSectionView()
+                        DarkmoonFaireCardSetView()
                     }
                 }
             }

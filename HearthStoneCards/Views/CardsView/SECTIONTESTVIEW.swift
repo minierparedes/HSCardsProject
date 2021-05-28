@@ -19,7 +19,7 @@ struct TESTRow: View {
 }
 
 struct SECTIONTESTVIEW: View {
-    @StateObject var hsCardCategoryVM = HSCardCategoryViewModel()
+    @StateObject var hsCardCategoryVM = HSCardsViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
         Dictionary(grouping: hsCardCategoryVM.theBarrensCardSetDATA, by: { $0.cardClass! })
     }

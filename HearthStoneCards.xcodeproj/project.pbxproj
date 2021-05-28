@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */; };
 		8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D325B8A265549770007972E /* CategoriesBarView.swift */; };
-		8D37320D265A3892009FF0F5 /* HSCardCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37320C265A3892009FF0F5 /* HSCardCategoryViewModel.swift */; };
+		8D37320D265A3892009FF0F5 /* HSCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */; };
 		8D373210265A9322009FF0F5 /* TEMP_CARDGRID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */; };
 		8D373214265B43B1009FF0F5 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373213265B43B1009FF0F5 /* CardImageView.swift */; };
 		8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */; };
 		8D37321E265B798A009FF0F5 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37321D265B798A009FF0F5 /* CardCellView.swift */; };
-		8D3A4519265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A4518265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift */; };
+		8D3A4519265F769D00DF4140 /* DarkmoonFaireCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A4518265F769D00DF4140 /* DarkmoonFaireCardSetView.swift */; };
 		8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */; };
 		8D50830E2659442F0037AEAB /* TheBarrensCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */; };
 		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
@@ -30,7 +30,7 @@
 		8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F232645144C008029C3 /* CardSetsView.swift */; };
 		8DB60F272645146B008029C3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F262645146B008029C3 /* SearchView.swift */; };
 		8DB60F2C26452A65008029C3 /* HSCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F2B26452A65008029C3 /* HSCardModel.swift */; };
-		8DB60F2F26456CC9008029C3 /* HSCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F2E26456CC9008029C3 /* HSCardsViewModel.swift */; };
+		8DB60F2F26456CC9008029C3 /* HSHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F2E26456CC9008029C3 /* HSHomeViewModel.swift */; };
 		8DB60F3226456FBA008029C3 /* HSCardsModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F3126456FBA008029C3 /* HSCardsModelDataService.swift */; };
 		8DB60F3526464998008029C3 /* FlipCardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F3426464998008029C3 /* FlipCardCellView.swift */; };
 		8DB60F39264663F8008029C3 /* HeroSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F38264663F8008029C3 /* HeroSectionView.swift */; };
@@ -42,6 +42,7 @@
 		8DB7C6412650F6E5005E5CB0 /* HSCardModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C6402650F6E5005E5CB0 /* HSCardModelFileManager.swift */; };
 		8DC745B6265E2D55006ADCFC /* HSCardModelImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC745B5265E2D55006ADCFC /* HSCardModelImageCacheManager.swift */; };
 		8DC745B9265E2F5F006ADCFC /* HSCardModelImageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC745B8265E2F5F006ADCFC /* HSCardModelImageFileManager.swift */; };
+		8DDD44642660836400B8EF31 /* StandardCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD44632660836400B8EF31 /* StandardCardSetView.swift */; };
 		8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */; };
 		8DE757EC264CC7B2002DB0AC /* ParallaxScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */; };
 		8DE99959265D2AEB0056735B /* SECTIONTESTVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */; };
@@ -50,12 +51,12 @@
 /* Begin PBXFileReference section */
 		8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelCacheManager.swift; sourceTree = "<group>"; };
 		8D325B8A265549770007972E /* CategoriesBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBarView.swift; sourceTree = "<group>"; };
-		8D37320C265A3892009FF0F5 /* HSCardCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardCategoryViewModel.swift; sourceTree = "<group>"; };
+		8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardsViewModel.swift; sourceTree = "<group>"; };
 		8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMP_CARDGRID.swift; sourceTree = "<group>"; };
 		8D373213265B43B1009FF0F5 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		8D37321D265B798A009FF0F5 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
-		8D3A4518265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadnessAtTheDarkmoonFaireView.swift; sourceTree = "<group>"; };
+		8D3A4518265F769D00DF4140 /* DarkmoonFaireCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkmoonFaireCardSetView.swift; sourceTree = "<group>"; };
 		8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBarrensCardSetView.swift; sourceTree = "<group>"; };
 		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
@@ -73,7 +74,7 @@
 		8DB60F232645144C008029C3 /* CardSetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetsView.swift; sourceTree = "<group>"; };
 		8DB60F262645146B008029C3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8DB60F2B26452A65008029C3 /* HSCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModel.swift; sourceTree = "<group>"; };
-		8DB60F2E26456CC9008029C3 /* HSCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardsViewModel.swift; sourceTree = "<group>"; };
+		8DB60F2E26456CC9008029C3 /* HSHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSHomeViewModel.swift; sourceTree = "<group>"; };
 		8DB60F3126456FBA008029C3 /* HSCardsModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardsModelDataService.swift; sourceTree = "<group>"; };
 		8DB60F3426464998008029C3 /* FlipCardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardCellView.swift; sourceTree = "<group>"; };
 		8DB60F38264663F8008029C3 /* HeroSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSectionView.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		8DB7C6402650F6E5005E5CB0 /* HSCardModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelFileManager.swift; sourceTree = "<group>"; };
 		8DC745B5265E2D55006ADCFC /* HSCardModelImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelImageCacheManager.swift; sourceTree = "<group>"; };
 		8DC745B8265E2F5F006ADCFC /* HSCardModelImageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelImageFileManager.swift; sourceTree = "<group>"; };
+		8DDD44632660836400B8EF31 /* StandardCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCardSetView.swift; sourceTree = "<group>"; };
 		8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
 		8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollingView.swift; sourceTree = "<group>"; };
 		8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECTIONTESTVIEW.swift; sourceTree = "<group>"; };
@@ -107,7 +109,8 @@
 				8DB60F2026451433008029C3 /* CardsView.swift */,
 				8D325B8A265549770007972E /* CategoriesBarView.swift */,
 				8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */,
-				8D3A4518265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift */,
+				8D3A4518265F769D00DF4140 /* DarkmoonFaireCardSetView.swift */,
+				8DDD44632660836400B8EF31 /* StandardCardSetView.swift */,
 				8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */,
 				8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */,
 				8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */,
@@ -175,11 +178,11 @@
 		8DB60F182645122D008029C3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				8DB60F2E26456CC9008029C3 /* HSCardsViewModel.swift */,
+				8DB60F2E26456CC9008029C3 /* HSHomeViewModel.swift */,
 				8DB60F502648D23B008029C3 /* HSHeroesViewModel.swift */,
 				8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */,
 				8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */,
-				8D37320C265A3892009FF0F5 /* HSCardCategoryViewModel.swift */,
+				8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -292,7 +295,7 @@
 				8DB60F1E2645141C008029C3 /* HomeView.swift in Sources */,
 				8DB60F4E2648BE6E008029C3 /* HSHeroModel.swift in Sources */,
 				8DA6B92E264D0A680082DB06 /* FlipCardImageView.swift in Sources */,
-				8D3A4519265F769D00DF4140 /* MadnessAtTheDarkmoonFaireView.swift in Sources */,
+				8D3A4519265F769D00DF4140 /* DarkmoonFaireCardSetView.swift in Sources */,
 				8DB60F4B2646C3D7008029C3 /* HeroClassSectionView.swift in Sources */,
 				8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */,
 				8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */,
@@ -301,10 +304,10 @@
 				8DB60F0A26451206008029C3 /* ContentView.swift in Sources */,
 				8DB7C6412650F6E5005E5CB0 /* HSCardModelFileManager.swift in Sources */,
 				8DB60F4226467608008029C3 /* CardFlipView.swift in Sources */,
-				8D37320D265A3892009FF0F5 /* HSCardCategoryViewModel.swift in Sources */,
+				8D37320D265A3892009FF0F5 /* HSCardsViewModel.swift in Sources */,
 				8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */,
 				8DB60F2126451433008029C3 /* CardsView.swift in Sources */,
-				8DB60F2F26456CC9008029C3 /* HSCardsViewModel.swift in Sources */,
+				8DB60F2F26456CC9008029C3 /* HSHomeViewModel.swift in Sources */,
 				8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */,
 				8DB60F272645146B008029C3 /* SearchView.swift in Sources */,
 				8DB60F3226456FBA008029C3 /* HSCardsModelDataService.swift in Sources */,
@@ -321,6 +324,7 @@
 				8D50830E2659442F0037AEAB /* TheBarrensCardSetView.swift in Sources */,
 				8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */,
 				8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */,
+				8DDD44642660836400B8EF31 /* StandardCardSetView.swift in Sources */,
 				8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */,
 				8DB60F512648D23B008029C3 /* HSHeroesViewModel.swift in Sources */,
 				8D373210265A9322009FF0F5 /* TEMP_CARDGRID.swift in Sources */,

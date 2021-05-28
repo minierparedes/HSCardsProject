@@ -1,18 +1,18 @@
 //
-//  CardsGridView.swift
+//  MadnessAtTheDarkmoonFaireView.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/22.
+//  Created by ethancr0wn on 2021/05/27.
 //
 
 import SwiftUI
 
-struct TheBarrensCardSetView: View {
+struct DarkmoonFaireCardSetView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
-        Dictionary(grouping: hsCardsVM.theBarrensCardSetDATA, by: { $0.cardClass! })
+        Dictionary(grouping: hsCardsVM.darkmoonFaireCardSetDATA, by: { $0.cardClass ?? "" })
     }
-    var uniq: [String] {
+    var mappedGroupedCardElements: [String] {
         dictionaryGroup.map({ $0.key }).sorted()
     }
     let columns: [GridItem] = [
@@ -22,19 +22,21 @@ struct TheBarrensCardSetView: View {
     var body: some View {
         VStack {
             Rectangle()
-                .overlay(Image("thebarrens_banner")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .frame(width: 450, height: 200))
-                .frame(height: 200)
+                .overlay(
+                    Image("Madness_at_the_Darkmoon_Faire_banner")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .clipped()
+                        .frame(width: 450, height: 200)
+                )
+                .frame(height: 250)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,
                 spacing: nil,
                 pinnedViews: [.sectionHeaders],
                 content: {
-                    ForEach(uniq, id: \.self) { section in
+                    ForEach(mappedGroupedCardElements, id: \.self) { section in
                         Section(header:
                                     SectionHeaderView(sectionTitle: section, sectionBadge: section)
                         ) {
@@ -48,8 +50,8 @@ struct TheBarrensCardSetView: View {
     }
 }
 
-struct CardsGridView_Previews: PreviewProvider {
+struct MadnessAtTheDarkmoonFaireView_Previews: PreviewProvider {
     static var previews: some View {
-        TheBarrensCardSetView()
+        DarkmoonFaireCardSetView()
     }
 }
