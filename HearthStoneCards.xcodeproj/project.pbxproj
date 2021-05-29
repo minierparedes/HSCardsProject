@@ -14,9 +14,30 @@
 		8D373214265B43B1009FF0F5 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373213265B43B1009FF0F5 /* CardImageView.swift */; };
 		8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */; };
 		8D37321E265B798A009FF0F5 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37321D265B798A009FF0F5 /* CardCellView.swift */; };
-		8D3A4519265F769D00DF4140 /* DarkmoonFaireCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A4518265F769D00DF4140 /* DarkmoonFaireCardSetView.swift */; };
+		8D3A4519265F769D00DF4140 /* DarkmoonFaireCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A4518265F769D00DF4140 /* DarkmoonFaireCardsView.swift */; };
 		8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */; };
-		8D50830E2659442F0037AEAB /* TheBarrensCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */; };
+		8D4CB329266270B200D0F0FC /* CoreCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB328266270B200D0F0FC /* CoreCardsView.swift */; };
+		8D4CB32C266270C900D0F0FC /* DemonHunterInitiateCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB32B266270C900D0F0FC /* DemonHunterInitiateCardsView.swift */; };
+		8D4CB32F266270E500D0F0FC /* GalakrondAwakeningCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB32E266270E500D0F0FC /* GalakrondAwakeningCardsView.swift */; };
+		8D4CB332266270FF00D0F0FC /* DescentOfDragonsCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB331266270FF00D0F0FC /* DescentOfDragonsCardsView.swift */; };
+		8D4CB3352662712100D0F0FC /* SaviorsOfUldumCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3342662712100D0F0FC /* SaviorsOfUldumCardsView.swift */; };
+		8D4CB3382662713B00D0F0FC /* RiseOfShadowsCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3372662713B00D0F0FC /* RiseOfShadowsCardsView.swift */; };
+		8D4CB33B2662715D00D0F0FC /* RastakhanRumbleCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB33A2662715D00D0F0FC /* RastakhanRumbleCardsView.swift */; };
+		8D4CB33E2662717100D0F0FC /* TheBoomsdayProjectCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB33D2662717100D0F0FC /* TheBoomsdayProjectCardsView.swift */; };
+		8D4CB3412662718500D0F0FC /* TheWitchwoodCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3402662718500D0F0FC /* TheWitchwoodCardsView.swift */; };
+		8D4CB344266271AD00D0F0FC /* KoboldsCatacombsCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB343266271AD00D0F0FC /* KoboldsCatacombsCardsView.swift */; };
+		8D4CB347266271C700D0F0FC /* KnightsOfTheFrozenThroneCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB346266271C700D0F0FC /* KnightsOfTheFrozenThroneCardsView.swift */; };
+		8D4CB34A266271DB00D0F0FC /* JourneyToUnGoroCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB349266271DB00D0F0FC /* JourneyToUnGoroCardsView.swift */; };
+		8D4CB34D266271F700D0F0FC /* MeanStreetsOfGadgetzanCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB34C266271F700D0F0FC /* MeanStreetsOfGadgetzanCardsView.swift */; };
+		8D4CB3502662721900D0F0FC /* OneNightInKarazhanCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB34F2662721900D0F0FC /* OneNightInKarazhanCardsView.swift */; };
+		8D4CB3532662723900D0F0FC /* WhispersOfTheOldGodsCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3522662723900D0F0FC /* WhispersOfTheOldGodsCardsView.swift */; };
+		8D4CB3562662725300D0F0FC /* TheLeagueOfExplorersCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3552662725300D0F0FC /* TheLeagueOfExplorersCardsView.swift */; };
+		8D4CB3592662726800D0F0FC /* TheGrandTournamentCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3582662726800D0F0FC /* TheGrandTournamentCardsView.swift */; };
+		8D4CB35C2662727F00D0F0FC /* BlackrockMoutainCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB35B2662727F00D0F0FC /* BlackrockMoutainCardsView.swift */; };
+		8D4CB35F2662729600D0F0FC /* GoblinsGnomesCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */; };
+		8D4CB362266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */; };
+		8D4CB365266272B500D0F0FC /* LegacyCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */; };
+		8D50830E2659442F0037AEAB /* TheBarrensCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */; };
 		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
 		8DA6B92E264D0A680082DB06 /* FlipCardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B92D264D0A680082DB06 /* FlipCardImageView.swift */; };
@@ -42,7 +63,9 @@
 		8DB7C6412650F6E5005E5CB0 /* HSCardModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7C6402650F6E5005E5CB0 /* HSCardModelFileManager.swift */; };
 		8DC745B6265E2D55006ADCFC /* HSCardModelImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC745B5265E2D55006ADCFC /* HSCardModelImageCacheManager.swift */; };
 		8DC745B9265E2F5F006ADCFC /* HSCardModelImageFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC745B8265E2F5F006ADCFC /* HSCardModelImageFileManager.swift */; };
-		8DDD44642660836400B8EF31 /* StandardCardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD44632660836400B8EF31 /* StandardCardSetView.swift */; };
+		8DDD44642660836400B8EF31 /* StandardCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD44632660836400B8EF31 /* StandardCardsView.swift */; };
+		8DDD446726621A8900B8EF31 /* WildCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD446626621A8900B8EF31 /* WildCardsView.swift */; };
+		8DDD447126626B8800B8EF31 /* ScholomanceCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD447026626B8800B8EF31 /* ScholomanceCardsView.swift */; };
 		8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */; };
 		8DE757EC264CC7B2002DB0AC /* ParallaxScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */; };
 		8DE99959265D2AEB0056735B /* SECTIONTESTVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */; };
@@ -56,9 +79,30 @@
 		8D373213265B43B1009FF0F5 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		8D37321D265B798A009FF0F5 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
-		8D3A4518265F769D00DF4140 /* DarkmoonFaireCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkmoonFaireCardSetView.swift; sourceTree = "<group>"; };
+		8D3A4518265F769D00DF4140 /* DarkmoonFaireCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkmoonFaireCardsView.swift; sourceTree = "<group>"; };
 		8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
-		8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBarrensCardSetView.swift; sourceTree = "<group>"; };
+		8D4CB328266270B200D0F0FC /* CoreCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCardsView.swift; sourceTree = "<group>"; };
+		8D4CB32B266270C900D0F0FC /* DemonHunterInitiateCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonHunterInitiateCardsView.swift; sourceTree = "<group>"; };
+		8D4CB32E266270E500D0F0FC /* GalakrondAwakeningCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalakrondAwakeningCardsView.swift; sourceTree = "<group>"; };
+		8D4CB331266270FF00D0F0FC /* DescentOfDragonsCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescentOfDragonsCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3342662712100D0F0FC /* SaviorsOfUldumCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaviorsOfUldumCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3372662713B00D0F0FC /* RiseOfShadowsCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiseOfShadowsCardsView.swift; sourceTree = "<group>"; };
+		8D4CB33A2662715D00D0F0FC /* RastakhanRumbleCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RastakhanRumbleCardsView.swift; sourceTree = "<group>"; };
+		8D4CB33D2662717100D0F0FC /* TheBoomsdayProjectCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBoomsdayProjectCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3402662718500D0F0FC /* TheWitchwoodCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWitchwoodCardsView.swift; sourceTree = "<group>"; };
+		8D4CB343266271AD00D0F0FC /* KoboldsCatacombsCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoboldsCatacombsCardsView.swift; sourceTree = "<group>"; };
+		8D4CB346266271C700D0F0FC /* KnightsOfTheFrozenThroneCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightsOfTheFrozenThroneCardsView.swift; sourceTree = "<group>"; };
+		8D4CB349266271DB00D0F0FC /* JourneyToUnGoroCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyToUnGoroCardsView.swift; sourceTree = "<group>"; };
+		8D4CB34C266271F700D0F0FC /* MeanStreetsOfGadgetzanCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeanStreetsOfGadgetzanCardsView.swift; sourceTree = "<group>"; };
+		8D4CB34F2662721900D0F0FC /* OneNightInKarazhanCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNightInKarazhanCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3522662723900D0F0FC /* WhispersOfTheOldGodsCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhispersOfTheOldGodsCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3552662725300D0F0FC /* TheLeagueOfExplorersCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLeagueOfExplorersCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3582662726800D0F0FC /* TheGrandTournamentCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheGrandTournamentCardsView.swift; sourceTree = "<group>"; };
+		8D4CB35B2662727F00D0F0FC /* BlackrockMoutainCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackrockMoutainCardsView.swift; sourceTree = "<group>"; };
+		8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoblinsGnomesCardsView.swift; sourceTree = "<group>"; };
+		8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseOfNaxxramasCardsView.swift; sourceTree = "<group>"; };
+		8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCardsView.swift; sourceTree = "<group>"; };
+		8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBarrensCardsView.swift; sourceTree = "<group>"; };
 		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
 		8DA6B92D264D0A680082DB06 /* FlipCardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardImageView.swift; sourceTree = "<group>"; };
@@ -86,7 +130,9 @@
 		8DB7C6402650F6E5005E5CB0 /* HSCardModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelFileManager.swift; sourceTree = "<group>"; };
 		8DC745B5265E2D55006ADCFC /* HSCardModelImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelImageCacheManager.swift; sourceTree = "<group>"; };
 		8DC745B8265E2F5F006ADCFC /* HSCardModelImageFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelImageFileManager.swift; sourceTree = "<group>"; };
-		8DDD44632660836400B8EF31 /* StandardCardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCardSetView.swift; sourceTree = "<group>"; };
+		8DDD44632660836400B8EF31 /* StandardCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCardsView.swift; sourceTree = "<group>"; };
+		8DDD446626621A8900B8EF31 /* WildCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildCardsView.swift; sourceTree = "<group>"; };
+		8DDD447026626B8800B8EF31 /* ScholomanceCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholomanceCardsView.swift; sourceTree = "<group>"; };
 		8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
 		8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollingView.swift; sourceTree = "<group>"; };
 		8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECTIONTESTVIEW.swift; sourceTree = "<group>"; };
@@ -107,10 +153,33 @@
 			isa = PBXGroup;
 			children = (
 				8DB60F2026451433008029C3 /* CardsView.swift */,
+				8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */,
+				8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */,
+				8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */,
+				8D4CB35B2662727F00D0F0FC /* BlackrockMoutainCardsView.swift */,
+				8D4CB3582662726800D0F0FC /* TheGrandTournamentCardsView.swift */,
+				8D4CB3552662725300D0F0FC /* TheLeagueOfExplorersCardsView.swift */,
+				8D4CB3522662723900D0F0FC /* WhispersOfTheOldGodsCardsView.swift */,
+				8D4CB34F2662721900D0F0FC /* OneNightInKarazhanCardsView.swift */,
+				8D4CB34C266271F700D0F0FC /* MeanStreetsOfGadgetzanCardsView.swift */,
+				8D4CB349266271DB00D0F0FC /* JourneyToUnGoroCardsView.swift */,
+				8D4CB346266271C700D0F0FC /* KnightsOfTheFrozenThroneCardsView.swift */,
+				8D4CB343266271AD00D0F0FC /* KoboldsCatacombsCardsView.swift */,
+				8D4CB3402662718500D0F0FC /* TheWitchwoodCardsView.swift */,
+				8D4CB33D2662717100D0F0FC /* TheBoomsdayProjectCardsView.swift */,
+				8D4CB33A2662715D00D0F0FC /* RastakhanRumbleCardsView.swift */,
+				8D4CB3372662713B00D0F0FC /* RiseOfShadowsCardsView.swift */,
+				8D4CB3342662712100D0F0FC /* SaviorsOfUldumCardsView.swift */,
+				8D4CB331266270FF00D0F0FC /* DescentOfDragonsCardsView.swift */,
+				8D4CB32E266270E500D0F0FC /* GalakrondAwakeningCardsView.swift */,
+				8D4CB32B266270C900D0F0FC /* DemonHunterInitiateCardsView.swift */,
+				8D4CB328266270B200D0F0FC /* CoreCardsView.swift */,
 				8D325B8A265549770007972E /* CategoriesBarView.swift */,
-				8D50830D2659442F0037AEAB /* TheBarrensCardSetView.swift */,
-				8D3A4518265F769D00DF4140 /* DarkmoonFaireCardSetView.swift */,
-				8DDD44632660836400B8EF31 /* StandardCardSetView.swift */,
+				8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */,
+				8D3A4518265F769D00DF4140 /* DarkmoonFaireCardsView.swift */,
+				8DDD446626621A8900B8EF31 /* WildCardsView.swift */,
+				8DDD44632660836400B8EF31 /* StandardCardsView.swift */,
+				8DDD447026626B8800B8EF31 /* ScholomanceCardsView.swift */,
 				8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */,
 				8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */,
 				8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */,
@@ -295,36 +364,59 @@
 				8DB60F1E2645141C008029C3 /* HomeView.swift in Sources */,
 				8DB60F4E2648BE6E008029C3 /* HSHeroModel.swift in Sources */,
 				8DA6B92E264D0A680082DB06 /* FlipCardImageView.swift in Sources */,
-				8D3A4519265F769D00DF4140 /* DarkmoonFaireCardSetView.swift in Sources */,
+				8D3A4519265F769D00DF4140 /* DarkmoonFaireCardsView.swift in Sources */,
 				8DB60F4B2646C3D7008029C3 /* HeroClassSectionView.swift in Sources */,
+				8D4CB32C266270C900D0F0FC /* DemonHunterInitiateCardsView.swift in Sources */,
+				8D4CB3562662725300D0F0FC /* TheLeagueOfExplorersCardsView.swift in Sources */,
+				8D4CB3412662718500D0F0FC /* TheWitchwoodCardsView.swift in Sources */,
 				8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */,
+				8D4CB3592662726800D0F0FC /* TheGrandTournamentCardsView.swift in Sources */,
+				8D4CB329266270B200D0F0FC /* CoreCardsView.swift in Sources */,
 				8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */,
+				8D4CB362266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift in Sources */,
+				8D4CB33E2662717100D0F0FC /* TheBoomsdayProjectCardsView.swift in Sources */,
+				8D4CB3382662713B00D0F0FC /* RiseOfShadowsCardsView.swift in Sources */,
 				8DC745B9265E2F5F006ADCFC /* HSCardModelImageFileManager.swift in Sources */,
+				8D4CB35C2662727F00D0F0FC /* BlackrockMoutainCardsView.swift in Sources */,
+				8D4CB3352662712100D0F0FC /* SaviorsOfUldumCardsView.swift in Sources */,
+				8DDD447126626B8800B8EF31 /* ScholomanceCardsView.swift in Sources */,
 				8DB60F2C26452A65008029C3 /* HSCardModel.swift in Sources */,
 				8DB60F0A26451206008029C3 /* ContentView.swift in Sources */,
+				8D4CB332266270FF00D0F0FC /* DescentOfDragonsCardsView.swift in Sources */,
 				8DB7C6412650F6E5005E5CB0 /* HSCardModelFileManager.swift in Sources */,
 				8DB60F4226467608008029C3 /* CardFlipView.swift in Sources */,
 				8D37320D265A3892009FF0F5 /* HSCardsViewModel.swift in Sources */,
 				8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */,
+				8D4CB35F2662729600D0F0FC /* GoblinsGnomesCardsView.swift in Sources */,
+				8D4CB33B2662715D00D0F0FC /* RastakhanRumbleCardsView.swift in Sources */,
 				8DB60F2126451433008029C3 /* CardsView.swift in Sources */,
 				8DB60F2F26456CC9008029C3 /* HSHomeViewModel.swift in Sources */,
+				8DDD446726621A8900B8EF31 /* WildCardsView.swift in Sources */,
 				8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */,
+				8D4CB347266271C700D0F0FC /* KnightsOfTheFrozenThroneCardsView.swift in Sources */,
 				8DB60F272645146B008029C3 /* SearchView.swift in Sources */,
 				8DB60F3226456FBA008029C3 /* HSCardsModelDataService.swift in Sources */,
 				8DE757EC264CC7B2002DB0AC /* ParallaxScrollingView.swift in Sources */,
+				8D4CB365266272B500D0F0FC /* LegacyCardsView.swift in Sources */,
 				8DB60F3C26466A68008029C3 /* LatestCardsSetSectionView.swift in Sources */,
+				8D4CB34D266271F700D0F0FC /* MeanStreetsOfGadgetzanCardsView.swift in Sources */,
 				8D373214265B43B1009FF0F5 /* CardImageView.swift in Sources */,
+				8D4CB34A266271DB00D0F0FC /* JourneyToUnGoroCardsView.swift in Sources */,
 				8DC745B6265E2D55006ADCFC /* HSCardModelImageCacheManager.swift in Sources */,
 				8DB60F3526464998008029C3 /* FlipCardCellView.swift in Sources */,
 				8DA6B939264E083E0082DB06 /* CardBacksIMG.swift in Sources */,
+				8D4CB32F266270E500D0F0FC /* GalakrondAwakeningCardsView.swift in Sources */,
 				8DB60F39264663F8008029C3 /* HeroSectionView.swift in Sources */,
 				8DB60F0826451206008029C3 /* HearthStoneCardsApp.swift in Sources */,
 				8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */,
 				8D37321E265B798A009FF0F5 /* CardCellView.swift in Sources */,
-				8D50830E2659442F0037AEAB /* TheBarrensCardSetView.swift in Sources */,
+				8D4CB344266271AD00D0F0FC /* KoboldsCatacombsCardsView.swift in Sources */,
+				8D50830E2659442F0037AEAB /* TheBarrensCardsView.swift in Sources */,
 				8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */,
 				8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */,
-				8DDD44642660836400B8EF31 /* StandardCardSetView.swift in Sources */,
+				8D4CB3502662721900D0F0FC /* OneNightInKarazhanCardsView.swift in Sources */,
+				8D4CB3532662723900D0F0FC /* WhispersOfTheOldGodsCardsView.swift in Sources */,
+				8DDD44642660836400B8EF31 /* StandardCardsView.swift in Sources */,
 				8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */,
 				8DB60F512648D23B008029C3 /* HSHeroesViewModel.swift in Sources */,
 				8D373210265A9322009FF0F5 /* TEMP_CARDGRID.swift in Sources */,

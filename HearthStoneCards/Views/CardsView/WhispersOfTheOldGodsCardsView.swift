@@ -1,16 +1,16 @@
 //
-//  CardsGridView.swift
+//  WhispersOfTheOldGodsCardsView.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/22.
+//  Created by ethancr0wn on 2021/05/29.
 //
 
 import SwiftUI
 
-struct TheBarrensCardSetView: View {
+struct WhispersOfTheOldGodsCardsView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
-        Dictionary(grouping: hsCardsVM.theBarrensCardSetDATA, by: { $0.cardClass! })
+        Dictionary(grouping: hsCardsVM.ogCardSetDATA, by: { $0.cardClass ?? "N/A" })
     }
     var uniq: [String] {
         dictionaryGroup.map({ $0.key }).sorted()
@@ -22,7 +22,7 @@ struct TheBarrensCardSetView: View {
     var body: some View {
         VStack {
             Rectangle()
-                .overlay(Image("thebarrens_banner")
+                .overlay(Image("Year_of_the_Gryphon_banner")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()
@@ -48,8 +48,8 @@ struct TheBarrensCardSetView: View {
     }
 }
 
-struct CardsGridView_Previews: PreviewProvider {
+struct WhispersOfTheOldGodsCardsView_Previews: PreviewProvider {
     static var previews: some View {
-        TheBarrensCardSetView()
+        WhispersOfTheOldGodsCardsView()
     }
 }

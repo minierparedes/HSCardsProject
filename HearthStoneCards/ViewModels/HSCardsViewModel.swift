@@ -134,11 +134,34 @@ class HSCardsViewModel: Identifiable, ObservableObject {
                     .compactMap({ $0 })
                     .filter({ $0.set == "LEGACY" && $0.name != "???" })
                 
-                
-                
-                
-
             
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.theBarrensCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.darkmoonFaireCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.standardCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.wildCardSetNamesYear2021DATA.count)")
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.scholomanceCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.blackTempleCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.coreCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.demonHunterInitiateCardSetDATA.count)")
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.naxxCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.gvgCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.brmCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.tgtCardSetDATA.count)")
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.loeCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.ogCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.karaCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.gangsCardSetDATA.count)")
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.ungoroCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.iceCrownCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.lootApaloozaCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.gilneasCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.boomsdayCardSetDATA.count)")
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.trollCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.dalaranCardSetDATA.count)")
+                print("*****\n standardCardSetDATA \n***** element count: \(self?.uldumCardSetDATA.count)")
+                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.dragonsCardSetDATA.count)")
+                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.yearOfTheDragonCardSetDATA.count)")
+                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.legacyCardSetDATA.count)")
                 
             }
             .store(in: &cancellables)

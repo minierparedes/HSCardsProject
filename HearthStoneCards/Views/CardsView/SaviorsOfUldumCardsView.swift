@@ -1,16 +1,16 @@
 //
-//  StandardCardSetView.swift
+//  SaviorsOfUldumCardsView.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/28.
+//  Created by ethancr0wn on 2021/05/29.
 //
 
 import SwiftUI
 
-struct StandardCardSetView: View {
+struct SaviorsOfUldumCardsView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
-        Dictionary(grouping: hsCardsVM.standardCardSetDATA, by: { $0.cardClass ?? "N/A" })
+        Dictionary(grouping: hsCardsVM.uldumCardSetDATA, by: { $0.cardClass ?? "N/A" })
     }
     var uniq: [String] {
         dictionaryGroup.map({ $0.key }).sorted()
@@ -48,8 +48,8 @@ struct StandardCardSetView: View {
     }
 }
 
-struct StandardCardSetView_Previews: PreviewProvider {
+struct SaviorsOfUldumCardsView_Previews: PreviewProvider {
     static var previews: some View {
-        StandardCardSetView()
+        SaviorsOfUldumCardsView()
     }
 }
