@@ -37,6 +37,7 @@
 		8D4CB35F2662729600D0F0FC /* GoblinsGnomesCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */; };
 		8D4CB362266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */; };
 		8D4CB365266272B500D0F0FC /* LegacyCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */; };
+		8D4CB3682662977C00D0F0FC /* AshesOfOutlandCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3672662977C00D0F0FC /* AshesOfOutlandCardsView.swift */; };
 		8D50830E2659442F0037AEAB /* TheBarrensCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */; };
 		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
@@ -102,6 +103,7 @@
 		8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoblinsGnomesCardsView.swift; sourceTree = "<group>"; };
 		8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseOfNaxxramasCardsView.swift; sourceTree = "<group>"; };
 		8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyCardsView.swift; sourceTree = "<group>"; };
+		8D4CB3672662977C00D0F0FC /* AshesOfOutlandCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshesOfOutlandCardsView.swift; sourceTree = "<group>"; };
 		8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBarrensCardsView.swift; sourceTree = "<group>"; };
 		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				8DDD446626621A8900B8EF31 /* WildCardsView.swift */,
 				8DDD44632660836400B8EF31 /* StandardCardsView.swift */,
 				8DDD447026626B8800B8EF31 /* ScholomanceCardsView.swift */,
+				8D4CB3672662977C00D0F0FC /* AshesOfOutlandCardsView.swift */,
 				8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */,
 				8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */,
 				8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */,
@@ -369,6 +372,7 @@
 				8D4CB32C266270C900D0F0FC /* DemonHunterInitiateCardsView.swift in Sources */,
 				8D4CB3562662725300D0F0FC /* TheLeagueOfExplorersCardsView.swift in Sources */,
 				8D4CB3412662718500D0F0FC /* TheWitchwoodCardsView.swift in Sources */,
+				8D4CB3682662977C00D0F0FC /* AshesOfOutlandCardsView.swift in Sources */,
 				8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */,
 				8D4CB3592662726800D0F0FC /* TheGrandTournamentCardsView.swift in Sources */,
 				8D4CB329266270B200D0F0FC /* CoreCardsView.swift in Sources */,

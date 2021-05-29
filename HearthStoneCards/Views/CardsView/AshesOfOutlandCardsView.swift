@@ -1,16 +1,16 @@
 //
-//  CardsGridView.swift
+//  AshesOfOutlandCardsView.swift
 //  HearthStoneCards
 //
-//  Created by ethancr0wn on 2021/05/22.
+//  Created by ethancr0wn on 2021/05/30.
 //
 
 import SwiftUI
 
-struct TheBarrensCardsView: View {
+struct AshesOfOutlandCardsView: View {
     @StateObject var hsCardsVM: HSCardsViewModel = HSCardsViewModel()
     var dictionaryGroup: [String: [HSCardModel]] {
-        Dictionary(grouping: hsCardsVM.theBarrensCardSetDATA, by: { $0.cardClass! })
+        Dictionary(grouping: hsCardsVM.blackTempleCardSetDATA, by: { $0.cardClass ?? "N/A" })
     }
     var uniq: [String] {
         dictionaryGroup.map({ $0.key }).sorted()
@@ -22,7 +22,7 @@ struct TheBarrensCardsView: View {
     var body: some View {
         VStack {
             Rectangle()
-                .overlay(Image("Forged_in_the_Barrens_banner")
+                .overlay(Image("Ashes_of_Outland_banner")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()
@@ -48,8 +48,8 @@ struct TheBarrensCardsView: View {
     }
 }
 
-struct CardsGridView_Previews: PreviewProvider {
+struct AshesOfOutlandCardsView_Previews: PreviewProvider {
     static var previews: some View {
-        TheBarrensCardsView()
+        AshesOfOutlandCardsView()
     }
 }

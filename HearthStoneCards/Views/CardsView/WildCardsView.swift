@@ -22,7 +22,7 @@ struct WildCardsView: View {
     var body: some View {
         VStack {
             Rectangle()
-                .overlay(Image("Year_of_the_Gryphon_banner")
+                .overlay(Image("wildCardSetBanner")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()

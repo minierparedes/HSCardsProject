@@ -31,7 +31,7 @@ struct CardsView: View {
                     } else if selectedCategory == "Scholomance Academy" {
                         ScholomanceCardsView()
                     } else if selectedCategory == "Ashes of Outland" {
-                        ScholomanceCardsView()
+                        AshesOfOutlandCardsView()
                     } else if selectedCategory == "Core" {
                         CoreCardsView()
                     } else if selectedCategory == "Demon Hunter Initiate" {

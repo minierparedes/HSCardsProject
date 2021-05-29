@@ -22,7 +22,7 @@ struct ScholomanceCardsView: View {
     var body: some View {
         VStack {
             Rectangle()
-                .overlay(Image("Year_of_the_Gryphon_banner")
+                .overlay(Image("Scholomance_Academy_banner")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .clipped()
