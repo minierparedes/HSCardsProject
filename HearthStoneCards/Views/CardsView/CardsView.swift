@@ -33,51 +33,60 @@ struct CardsView: View {
                     } else if selectedCategory == "Ashes of Outland" {
                         ScholomanceCardsView()
                     } else if selectedCategory == "Core" {
-                        ScholomanceCardsView()
+                        CoreCardsView()
                     } else if selectedCategory == "Demon Hunter Initiate" {
-                        ScholomanceCardsView()
+                        DemonHunterInitiateCardsView()
                     } else if selectedCategory == "Galakrond's Awakening" {
-                        ScholomanceCardsView()
+                        GalakrondAwakeningCardsView()
                     } else if selectedCategory == "Descent of Dragons" {
-                        ScholomanceCardsView()
+                        DescentOfDragonsCardsView()
                     } else if selectedCategory == "Saviors of Uldum" {
-                        ScholomanceCardsView()
+                        SaviorsOfUldumCardsView()
                     } else if selectedCategory == "Rise of Shadows" {
-                        ScholomanceCardsView()
+                        RiseOfShadowsCardsView()
                     } else if selectedCategory == "Rastakhan's Rumble" {
-                        ScholomanceCardsView()
+                        RastakhanRumbleCardsView()
                     } else if selectedCategory == "The Boomsday Project" {
-                        ScholomanceCardsView()
+                        TheBoomsdayProjectCardsView()
                     } else if selectedCategory == "The Witchwood" {
-                        ScholomanceCardsView()
+                        TheWitchwoodCardsView()
                     } else if selectedCategory == "Kobolds & Catacombs" {
-                        ScholomanceCardsView()
+                        KoboldsCatacombsCardsView()
                     } else if selectedCategory == "Knights of the Frozen Throne" {
-                        ScholomanceCardsView()
+                        KnightsOfTheFrozenThroneCardsView()
                     } else if selectedCategory == "Journey to Un'Goro" {
-                        ScholomanceCardsView()
+                        JourneyToUnGoroCardsView()
                     } else if selectedCategory == "Mean Streets of Gadgetzan" {
-                        ScholomanceCardsView()
+                        MeanStreetsOfGadgetzanCardsView()
                     } else if selectedCategory == "One Night in Karazhan" {
-                        ScholomanceCardsView()
+                        OneNightInKarazhanCardsView()
                     } else if selectedCategory == "Whispers of the Old Gods" {
-                        ScholomanceCardsView()
+                        WhispersOfTheOldGodsCardsView()
                     } else if selectedCategory == "The League of Explorers" {
-                        ScholomanceCardsView()
+                        TheLeagueOfExplorersCardsView()
                     } else if selectedCategory == "The Grand Tournament" {
-                        ScholomanceCardsView()
+                        TheGrandTournamentCardsView()
                     } else if selectedCategory == "Blackrock Mountain" {
-                        ScholomanceCardsView()
+                        BlackrockMoutainCardsView()
                     } else if selectedCategory == "Goblins vs Gnomes" {
-                        ScholomanceCardsView()
+                        GoblinsGnomesCardsView()
                     } else if selectedCategory == "Curse of Naxxramas" {
-                        ScholomanceCardsView()
+                        CurseOfNaxxramasCardsView()
                     } else if selectedCategory == "Legacy" {
-                        ScholomanceCardsView()
+                        LegacyCardsView()
                     }
                 }
             }
-            .navigationTitle("Cards")
+            .navigationTitle(selectedCategory)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    Image(selectedCategory)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(Color.yellow)
+                }
+            }
         }
             
     }
