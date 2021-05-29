@@ -139,10 +139,6 @@ class HSCardsViewModel: Identifiable, ObservableObject {
                 
 
             
-                print("*****\n theBarrensCardSetDATA \n***** element count: \(self?.theBarrensCardSetDATA.count)")
-                print("*****\n darkmoonFaireCardSetDATA \n***** element count: \(self?.darkmoonFaireCardSetDATA.count)")
-                print("*****\n standardCardSetDATA \n***** element count: \(self?.standardCardSetDATA.count)")
-                print("*****\n wildCardSetNamesYear2021DATA \n***** element count: \(self?.wildCardSetNamesYear2021DATA.count)")
                 
             }
             .store(in: &cancellables)
