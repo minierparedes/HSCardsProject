@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardsView: View {
     @State var selectedCategory: String = "Standard"
-    @State var loadingState: CategoryLoadingState.SelectedCategoryView = .standardCardsView
+    @State var loadingState: CategoryLoadingState.SelectedCategoryView = .standard
     var body: some View {
         NavigationView {
             VStack {

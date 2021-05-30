@@ -21,13 +21,10 @@ struct TheBarrensCardsView: View {
     ]
     var body: some View {
         ScrollView {
-            Rectangle()
-                .overlay(Image("Forged_in_the_Barrens_banner")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .frame(width: 450, height: 200))
-                .frame(height: 200)
+            Image("Forged_in_the_Barrens_banner")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,

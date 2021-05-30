@@ -20,14 +20,11 @@ struct ScholomanceCardsView: View {
         GridItem(.flexible(), spacing: 6, alignment: nil)
     ]
     var body: some View {
-        VStack {
-            Rectangle()
-                .overlay(Image("Scholomance_Academy_banner")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .frame(width: 450, height: 200))
-                .frame(height: 200)
+        ScrollView {
+            Image("scholomanceAcademy")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,
