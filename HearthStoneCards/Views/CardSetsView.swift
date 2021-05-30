@@ -10,7 +10,7 @@ import SwiftUI
 struct CardSetsView: View {
     var body: some View {
         NavigationView {
-            LatestCardsSetSectionView()
+            Text("CARD SETS")
                 .navigationTitle("Card Sets")
         }
     }

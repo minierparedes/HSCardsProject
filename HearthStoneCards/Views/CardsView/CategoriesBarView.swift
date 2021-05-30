@@ -36,10 +36,10 @@ struct CategoriesBarView: View {
                         })
                         .accentColor(.primary)
                     }
-                    .overlay(Capsule()
-                                .stroke(Color(.systemGray5), lineWidth: 1)
-                                .matchedGeometryEffect(id: selectedCategory, in: animation, isSource: false)
-                                .foregroundColor(.yellow))
+//                    .overlay(Capsule()
+//                                .stroke(Color(.systemGray5), lineWidth: 1)
+//                                .matchedGeometryEffect(id: selectedCategory, in: animation, isSource: false)
+//                                .foregroundColor(.yellow))
                 }
             }
         }

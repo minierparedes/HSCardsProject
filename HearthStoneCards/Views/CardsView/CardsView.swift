@@ -15,7 +15,7 @@ struct CardsView: View {
             VStack {
                 CategoriesBarView(selectedCategory: $selectedCategory)
                 
-                ScrollView {
+                VStack {
                     CategoryLoadingState.categoryLoader(optionSelected: CategoryLoadingState.SelectedCategoryView(rawValue: selectedCategory)!)
                 }
             }

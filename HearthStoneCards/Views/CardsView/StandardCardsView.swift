@@ -20,7 +20,7 @@ struct StandardCardsView: View {
         GridItem(.flexible(), spacing: 6, alignment: nil)
     ]
     var body: some View {
-        VStack {
+        ScrollView {
             Rectangle()
                 .overlay(Image("Year_of_the_Gryphon_banner")
                             .resizable()

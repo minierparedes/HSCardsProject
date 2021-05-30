@@ -20,7 +20,7 @@ struct WildCardsView: View {
         GridItem(.flexible(), spacing: 6, alignment: nil)
     ]
     var body: some View {
-        VStack {
+        ScrollView {
             Rectangle()
                 .overlay(Image("wildCardSetBanner")
                             .resizable()

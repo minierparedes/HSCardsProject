@@ -10,7 +10,6 @@
 		8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */; };
 		8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D325B8A265549770007972E /* CategoriesBarView.swift */; };
 		8D37320D265A3892009FF0F5 /* HSCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */; };
-		8D373210265A9322009FF0F5 /* TEMP_CARDGRID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */; };
 		8D373214265B43B1009FF0F5 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373213265B43B1009FF0F5 /* CardImageView.swift */; };
 		8D373218265B49C9009FF0F5 /* CardImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */; };
 		8D37321E265B798A009FF0F5 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37321D265B798A009FF0F5 /* CardCellView.swift */; };
@@ -77,7 +76,6 @@
 		8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelCacheManager.swift; sourceTree = "<group>"; };
 		8D325B8A265549770007972E /* CategoriesBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBarView.swift; sourceTree = "<group>"; };
 		8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardsViewModel.swift; sourceTree = "<group>"; };
-		8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMP_CARDGRID.swift; sourceTree = "<group>"; };
 		8D373213265B43B1009FF0F5 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		8D373217265B49C9009FF0F5 /* CardImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		8D37321D265B798A009FF0F5 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
@@ -159,6 +157,10 @@
 				8DB60F2026451433008029C3 /* CardsView.swift */,
 				8D325B8A265549770007972E /* CategoriesBarView.swift */,
 				8D78ED942663503F007F65E6 /* CategoryLoadingState.swift */,
+				8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */,
+				8DDD44632660836400B8EF31 /* StandardCardsView.swift */,
+				8DDD446626621A8900B8EF31 /* WildCardsView.swift */,
+				8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */,
 				8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */,
 				8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */,
 				8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */,
@@ -180,14 +182,9 @@
 				8D4CB32E266270E500D0F0FC /* GalakrondAwakeningCardsView.swift */,
 				8D4CB32B266270C900D0F0FC /* DemonHunterInitiateCardsView.swift */,
 				8D4CB328266270B200D0F0FC /* CoreCardsView.swift */,
-				8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */,
 				8D3A4518265F769D00DF4140 /* DarkmoonFaireCardsView.swift */,
-				8DDD446626621A8900B8EF31 /* WildCardsView.swift */,
-				8DDD44632660836400B8EF31 /* StandardCardsView.swift */,
 				8DDD447026626B8800B8EF31 /* ScholomanceCardsView.swift */,
 				8D4CB3672662977C00D0F0FC /* AshesOfOutlandCardsView.swift */,
-				8D37320F265A9322009FF0F5 /* TEMP_CARDGRID.swift */,
-				8D3C5C9F265BD711002F8BBF /* SectionHeaderView.swift */,
 				8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */,
 			);
 			path = CardsView;
@@ -427,7 +424,6 @@
 				8DDD44642660836400B8EF31 /* StandardCardsView.swift in Sources */,
 				8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */,
 				8DB60F512648D23B008029C3 /* HSHeroesViewModel.swift in Sources */,
-				8D373210265A9322009FF0F5 /* TEMP_CARDGRID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

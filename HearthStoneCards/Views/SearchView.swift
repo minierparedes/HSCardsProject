@@ -10,8 +10,8 @@ import SwiftUI
 struct SearchView: View {
     var body: some View {
         NavigationView {
-            CardBacksIMG.pandaria
-                .aspectRatio(contentMode: .fit)
+            Text("SEARCH VIEW")
+                .font(.title)
                 .navigationTitle("Search")
         }
     }
