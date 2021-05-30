@@ -44,6 +44,7 @@ struct CategoriesBarView: View {
             }
         }
         .padding()
+        
     }
 }
 

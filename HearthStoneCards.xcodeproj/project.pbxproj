@@ -40,6 +40,7 @@
 		8D4CB3682662977C00D0F0FC /* AshesOfOutlandCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CB3672662977C00D0F0FC /* AshesOfOutlandCardsView.swift */; };
 		8D50830E2659442F0037AEAB /* TheBarrensCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */; };
 		8D53CE3326549D1D00D70CB7 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */; };
+		8D78ED952663503F007F65E6 /* CategoryLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D78ED942663503F007F65E6 /* CategoryLoadingState.swift */; };
 		8DA6B92A264CFF9B0082DB06 /* CardImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */; };
 		8DA6B92E264D0A680082DB06 /* FlipCardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B92D264D0A680082DB06 /* FlipCardImageView.swift */; };
 		8DA6B939264E083E0082DB06 /* CardBacksIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */; };
@@ -106,6 +107,7 @@
 		8D4CB3672662977C00D0F0FC /* AshesOfOutlandCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshesOfOutlandCardsView.swift; sourceTree = "<group>"; };
 		8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBarrensCardsView.swift; sourceTree = "<group>"; };
 		8D53CE3226549D1C00D70CB7 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
+		8D78ED942663503F007F65E6 /* CategoryLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLoadingState.swift; sourceTree = "<group>"; };
 		8DA6B929264CFF9B0082DB06 /* CardImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageViewModel.swift; sourceTree = "<group>"; };
 		8DA6B92D264D0A680082DB06 /* FlipCardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardImageView.swift; sourceTree = "<group>"; };
 		8DA6B938264E083E0082DB06 /* CardBacksIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBacksIMG.swift; sourceTree = "<group>"; };
@@ -155,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				8DB60F2026451433008029C3 /* CardsView.swift */,
+				8D325B8A265549770007972E /* CategoriesBarView.swift */,
+				8D78ED942663503F007F65E6 /* CategoryLoadingState.swift */,
 				8D4CB364266272B500D0F0FC /* LegacyCardsView.swift */,
 				8D4CB361266272A900D0F0FC /* CurseOfNaxxramasCardsView.swift */,
 				8D4CB35E2662729600D0F0FC /* GoblinsGnomesCardsView.swift */,
@@ -176,7 +180,6 @@
 				8D4CB32E266270E500D0F0FC /* GalakrondAwakeningCardsView.swift */,
 				8D4CB32B266270C900D0F0FC /* DemonHunterInitiateCardsView.swift */,
 				8D4CB328266270B200D0F0FC /* CoreCardsView.swift */,
-				8D325B8A265549770007972E /* CategoriesBarView.swift */,
 				8D50830D2659442F0037AEAB /* TheBarrensCardsView.swift */,
 				8D3A4518265F769D00DF4140 /* DarkmoonFaireCardsView.swift */,
 				8DDD446626621A8900B8EF31 /* WildCardsView.swift */,
@@ -383,6 +386,7 @@
 				8DC745B9265E2F5F006ADCFC /* HSCardModelImageFileManager.swift in Sources */,
 				8D4CB35C2662727F00D0F0FC /* BlackrockMoutainCardsView.swift in Sources */,
 				8D4CB3352662712100D0F0FC /* SaviorsOfUldumCardsView.swift in Sources */,
+				8D78ED952663503F007F65E6 /* CategoryLoadingState.swift in Sources */,
 				8DDD447126626B8800B8EF31 /* ScholomanceCardsView.swift in Sources */,
 				8DB60F2C26452A65008029C3 /* HSCardModel.swift in Sources */,
 				8DB60F0A26451206008029C3 /* ContentView.swift in Sources */,
