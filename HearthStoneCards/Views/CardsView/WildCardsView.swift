@@ -21,13 +21,10 @@ struct WildCardsView: View {
     ]
     var body: some View {
         ScrollView {
-            Rectangle()
-                .overlay(Image("wildCardSetBanner")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .frame(width: 450, height: 200))
-                .frame(height: 200)
+            Image("wildCardSetBanner")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,

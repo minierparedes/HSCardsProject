@@ -21,13 +21,10 @@ struct StandardCardsView: View {
     ]
     var body: some View {
         ScrollView {
-            Rectangle()
-                .overlay(Image("Year_of_the_Gryphon_banner")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .clipped()
-                            .frame(width: 450, height: 200))
-                .frame(height: 200)
+            Image("yearOfTheGryphonBanner")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width)
             LazyVGrid(
                 columns: columns,
                 alignment: .center,

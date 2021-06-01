@@ -16,8 +16,8 @@ struct AshesOfOutlandCardsView: View {
         dictionaryGroup.map({ $0.key }).sorted()
     }
     let columns: [GridItem] = [
-        GridItem(.flexible(), spacing: 6, alignment: nil),
-        GridItem(.flexible(), spacing: 6, alignment: nil)
+        GridItem(.adaptive(minimum: 200), spacing: 6),
+        GridItem(.adaptive(minimum: 200), spacing: 6)
     ]
     var body: some View {
         ScrollView {

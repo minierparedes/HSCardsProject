@@ -137,7 +137,6 @@ class HSCardsViewModel: Identifiable, ObservableObject {
             }
             .store(in: &cancellables)
     }
-        
      
 }
 

@@ -21,7 +21,7 @@ struct ContentView: View {
                 Text("Cards")
                 Image(systemName: "square.stack.3d.down.right")
                 }
-            CardSetsView()
+            CardSetCellView()
             .tabItem {
                 Text("Card Sets")
                 Image(systemName: "square.stack.3d.up")

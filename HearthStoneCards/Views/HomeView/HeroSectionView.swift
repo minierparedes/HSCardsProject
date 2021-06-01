@@ -10,7 +10,7 @@ import SwiftUI
 struct HeroSectionView: View {
     var body: some View {
         TabView{
-            ForEach(0..<10) {item in
+            ForEach(0..<3) {item in
                 VStack(alignment: .leading) {
                     Text("Standard Bundle")
                         .font(.title)
@@ -23,9 +23,10 @@ struct HeroSectionView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .overlay(Color.black.opacity(0.2))
-                        .frame(width: 360, height: 250)
+                        .frame(width: 370, height: 250)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
+                .frame(maxWidth: .infinity)
                 
               
             }
@@ -33,7 +34,7 @@ struct HeroSectionView: View {
         .frame(height: 350)
         .padding(.top, 30)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-        .animation(.easeOut)
+        
         
         
        

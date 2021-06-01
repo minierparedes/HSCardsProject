@@ -21,7 +21,7 @@ struct CoreCardsView: View {
     ]
     var body: some View {
         ScrollView {
-            Image("Year_of_the_Gryphon_banner")
+            Image("yearOfTheGryphonBanner")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: UIScreen.main.bounds.width)

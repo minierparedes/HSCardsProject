@@ -49,7 +49,7 @@
 		8DB60F0F26451208008029C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB60F0E26451208008029C3 /* Preview Assets.xcassets */; };
 		8DB60F1E2645141C008029C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F1D2645141C008029C3 /* HomeView.swift */; };
 		8DB60F2126451433008029C3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F2026451433008029C3 /* CardsView.swift */; };
-		8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F232645144C008029C3 /* CardSetsView.swift */; };
+		8DB60F242645144C008029C3 /* CardSetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F232645144C008029C3 /* CardSetCellView.swift */; };
 		8DB60F272645146B008029C3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F262645146B008029C3 /* SearchView.swift */; };
 		8DB60F2C26452A65008029C3 /* HSCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F2B26452A65008029C3 /* HSCardModel.swift */; };
 		8DB60F2F26456CC9008029C3 /* HSHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB60F2E26456CC9008029C3 /* HSHomeViewModel.swift */; };
@@ -70,6 +70,8 @@
 		8DE757E9264CC53B002DB0AC /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */; };
 		8DE757EC264CC7B2002DB0AC /* ParallaxScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */; };
 		8DE99959265D2AEB0056735B /* SECTIONTESTVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */; };
+		8DEB8AE626660EF90069DFBE /* CardSetsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB8AE526660EF90069DFBE /* CardSetsDetailView.swift */; };
+		8DEB8AE8266616940069DFBE /* CardSetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB8AE7266616940069DFBE /* CardSetListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +119,7 @@
 		8DB60F1026451208008029C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB60F1D2645141C008029C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DB60F2026451433008029C3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
-		8DB60F232645144C008029C3 /* CardSetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetsView.swift; sourceTree = "<group>"; };
+		8DB60F232645144C008029C3 /* CardSetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetCellView.swift; sourceTree = "<group>"; };
 		8DB60F262645146B008029C3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8DB60F2B26452A65008029C3 /* HSCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModel.swift; sourceTree = "<group>"; };
 		8DB60F2E26456CC9008029C3 /* HSHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSHomeViewModel.swift; sourceTree = "<group>"; };
@@ -138,6 +140,8 @@
 		8DE757E8264CC53B002DB0AC /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
 		8DE757EB264CC7B2002DB0AC /* ParallaxScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollingView.swift; sourceTree = "<group>"; };
 		8DE99958265D2AEB0056735B /* SECTIONTESTVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SECTIONTESTVIEW.swift; sourceTree = "<group>"; };
+		8DEB8AE526660EF90069DFBE /* CardSetsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetsDetailView.swift; sourceTree = "<group>"; };
+		8DEB8AE7266616940069DFBE /* CardSetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D1313742664B01A00241E9E /* CardSetsView */ = {
+			isa = PBXGroup;
+			children = (
+				8DB60F232645144C008029C3 /* CardSetCellView.swift */,
+				8DEB8AE526660EF90069DFBE /* CardSetsDetailView.swift */,
+				8DEB8AE7266616940069DFBE /* CardSetListView.swift */,
+			);
+			path = CardSetsView;
+			sourceTree = "<group>";
+		};
 		8D325B89265549500007972E /* CardsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,11 +247,11 @@
 		8DB60F1726451226008029C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D1313742664B01A00241E9E /* CardSetsView */,
 				8D325B89265549500007972E /* CardsView */,
 				8DB60F3726466394008029C3 /* HomeView */,
 				8DB60F3426464998008029C3 /* FlipCardCellView.swift */,
 				8DB60F4126467608008029C3 /* CardFlipView.swift */,
-				8DB60F232645144C008029C3 /* CardSetsView.swift */,
 				8D37321D265B798A009FF0F5 /* CardCellView.swift */,
 				8DB60F262645146B008029C3 /* SearchView.swift */,
 				8D373213265B43B1009FF0F5 /* CardImageView.swift */,
@@ -381,6 +395,7 @@
 				8D4CB33E2662717100D0F0FC /* TheBoomsdayProjectCardsView.swift in Sources */,
 				8D4CB3382662713B00D0F0FC /* RiseOfShadowsCardsView.swift in Sources */,
 				8DC745B9265E2F5F006ADCFC /* HSCardModelImageFileManager.swift in Sources */,
+				8DEB8AE626660EF90069DFBE /* CardSetsDetailView.swift in Sources */,
 				8D4CB35C2662727F00D0F0FC /* BlackrockMoutainCardsView.swift in Sources */,
 				8D4CB3352662712100D0F0FC /* SaviorsOfUldumCardsView.swift in Sources */,
 				8D78ED952663503F007F65E6 /* CategoryLoadingState.swift in Sources */,
@@ -391,7 +406,7 @@
 				8DB7C6412650F6E5005E5CB0 /* HSCardModelFileManager.swift in Sources */,
 				8DB60F4226467608008029C3 /* CardFlipView.swift in Sources */,
 				8D37320D265A3892009FF0F5 /* HSCardsViewModel.swift in Sources */,
-				8DB60F242645144C008029C3 /* CardSetsView.swift in Sources */,
+				8DB60F242645144C008029C3 /* CardSetCellView.swift in Sources */,
 				8D4CB35F2662729600D0F0FC /* GoblinsGnomesCardsView.swift in Sources */,
 				8D4CB33B2662715D00D0F0FC /* RastakhanRumbleCardsView.swift in Sources */,
 				8DB60F2126451433008029C3 /* CardsView.swift in Sources */,
@@ -419,6 +434,7 @@
 				8D50830E2659442F0037AEAB /* TheBarrensCardsView.swift in Sources */,
 				8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */,
 				8D3C5CA0265BD711002F8BBF /* SectionHeaderView.swift in Sources */,
+				8DEB8AE8266616940069DFBE /* CardSetListView.swift in Sources */,
 				8D4CB3502662721900D0F0FC /* OneNightInKarazhanCardsView.swift in Sources */,
 				8D4CB3532662723900D0F0FC /* WhispersOfTheOldGodsCardsView.swift in Sources */,
 				8DDD44642660836400B8EF31 /* StandardCardsView.swift in Sources */,
