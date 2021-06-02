@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct CardSetListView: View {
+    @State var cardSetVM: CardSetViewModel = CardSetViewModel()
     var body: some View {
-        NavigationView {
-            Text("Card Set View")
-                .navigationTitle("Card Sets")
+        ScrollView {
+            ForEach(cardSetVM.cardSetData) {cardset in
+                CardSetCellView(cardset: cardset)
+            }
         }
     }
 }

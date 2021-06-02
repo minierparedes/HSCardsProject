@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardSetCellView: View {
+    var cardset: CardSetsModel
     @State var isShowing: Bool = false
     @Namespace var namespace
     var body: some View {
@@ -15,7 +16,7 @@ struct CardSetCellView: View {
                 if isShowing == false {
                     VStack {
                         VStack {
-                           Image("curseOfNaxxramas")
+                            Image(cardset.contentIMG)
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .matchedGeometryEffect(id: "cardSetBanner", in: namespace)
@@ -23,14 +24,14 @@ struct CardSetCellView: View {
                             
                             
                             HStack {
-                                Image("classicIcon")
+                                Image(cardset.yearOfIcon)
                                     .resizable()
                                     .foregroundColor(.yellow)
                                     .frame(width: 36, height: 36)
                                 VStack(alignment: .leading) {
-                                    Text("Years 1 & 2 (2014 - 2015)")
+                                    Text(cardset.yearOfTitle)
                                         .fontWeight(.bold)
-                                    Text("Wild Format")
+                                    Text(cardset.formatTitle)
                                         .font(.subheadline)
                                 }
                                 Spacer()
@@ -65,10 +66,6 @@ struct CardSetCellView: View {
 
 struct CardSetsView_Previews: PreviewProvider {
     static var previews: some View {
-        CardSetCellView()
-            
-            
-            
-            
+        CardSetCellView(cardset: CardSetsModel(title: "Curse of Naxxramas", yearOfTitle: "Years 1 & 2 (2014-2015)", contentIMG: "CurseOfNaxxramas", yearOfIcon: "years1and2", formatTitle: "Wild Format"))
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardSetsDetailView: View {
+    var isShowing: Bool = false
     @State var isAppear: Bool = false
     let multiLineText: String = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -15,12 +16,34 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     var namespace: Namespace.ID
     var body: some View {
         ScrollView {
-            VStack() {
-               Image("curseOfNaxxramas")
-                .resizable()
-                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                .matchedGeometryEffect(id: "cardSetBanner", in: namespace)
-                .frame(width: UIScreen.main.bounds.width)
+            VStack {
+                
+                ZStack {
+                    Image("curseOfNaxxramas")
+                     .resizable()
+                     .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                     .matchedGeometryEffect(id: "cardSetBanner", in: namespace)
+                     .frame(width: UIScreen.main.bounds.width)
+                    
+                    HStack {
+                        Spacer(minLength: 0)
+                        Button(action: {
+                            withAnimation(.interactiveSpring(response: 0.5, dampingFraction: 0.8, blendDuration: 0.8)) {
+                               
+                            }
+                        }) {
+                            Image(systemName: "xmark")
+                                .foregroundColor(Color.black.opacity(0.7))
+                                .padding()
+                                .background(Color.gray.opacity(0.8))
+                                .clipShape(Circle())
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, UIApplication.shared.windows.first!.safeAreaInsets.top)
+                }
+               
+                
                 
                 
                 HStack {

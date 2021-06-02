@@ -12,11 +12,12 @@ struct LatestCardsSetSectionView: View {
     var body: some View {
         HStack {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 30) {
+                HStack(spacing: 5) {
                     ForEach(hsCardsVM.latestCardSets) {card in
                         FlipCardCellView(cardModel: card)
                             .frame(width: 150, height: 250)
                     }
+                    .padding(.horizontal, 10)
                 }
             }
         }
