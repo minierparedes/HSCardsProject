@@ -10,6 +10,7 @@
 		8D1E10E92667421C005699CB /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E10E82667421C005699CB /* TabBar.swift */; };
 		8D1E10EB266744A3005699CB /* CardSetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E10EA266744A3005699CB /* CardSetsModel.swift */; };
 		8D1E10ED2667463F005699CB /* CardSetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E10EC2667463F005699CB /* CardSetViewModel.swift */; };
+		8D1E10EF266752C8005699CB /* CardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1E10EE266752C8005699CB /* CardSetView.swift */; };
 		8D274E78264FF96B009DB4AD /* HSCardModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */; };
 		8D325B8B265549770007972E /* CategoriesBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D325B8A265549770007972E /* CategoriesBarView.swift */; };
 		8D37320D265A3892009FF0F5 /* HSCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */; };
@@ -81,6 +82,7 @@
 		8D1E10E82667421C005699CB /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		8D1E10EA266744A3005699CB /* CardSetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetsModel.swift; sourceTree = "<group>"; };
 		8D1E10EC2667463F005699CB /* CardSetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetViewModel.swift; sourceTree = "<group>"; };
+		8D1E10EE266752C8005699CB /* CardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetView.swift; sourceTree = "<group>"; };
 		8D274E77264FF96B009DB4AD /* HSCardModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardModelCacheManager.swift; sourceTree = "<group>"; };
 		8D325B8A265549770007972E /* CategoriesBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBarView.swift; sourceTree = "<group>"; };
 		8D37320C265A3892009FF0F5 /* HSCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCardsViewModel.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				8DB60F232645144C008029C3 /* CardSetCellView.swift */,
+				8D1E10EE266752C8005699CB /* CardSetView.swift */,
 				8DEB8AE526660EF90069DFBE /* CardSetsDetailView.swift */,
 				8DEB8AE7266616940069DFBE /* CardSetListView.swift */,
 			);
@@ -432,6 +435,7 @@
 				8DB60F3C26466A68008029C3 /* LatestCardsSetSectionView.swift in Sources */,
 				8D4CB34D266271F700D0F0FC /* MeanStreetsOfGadgetzanCardsView.swift in Sources */,
 				8D373214265B43B1009FF0F5 /* CardImageView.swift in Sources */,
+				8D1E10EF266752C8005699CB /* CardSetView.swift in Sources */,
 				8D4CB34A266271DB00D0F0FC /* JourneyToUnGoroCardsView.swift in Sources */,
 				8D1E10ED2667463F005699CB /* CardSetViewModel.swift in Sources */,
 				8DC745B6265E2D55006ADCFC /* HSCardModelImageCacheManager.swift in Sources */,

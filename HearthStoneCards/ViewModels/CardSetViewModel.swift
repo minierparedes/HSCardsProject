@@ -9,7 +9,8 @@ import Foundation
 
 class CardSetViewModel: ObservableObject {
     @Published var cardSetData: [CardSetsModel] = []
-    @Published var show: Bool = false
+    @Published var selectedCardset = CardSetsModel(title: "", yearOfTitle: "", contentIMG: "", yearOfIcon: "", formatTitle: "")
+    @Published var isShowing: Bool = false
     
     init() {
         getCardSetData()
